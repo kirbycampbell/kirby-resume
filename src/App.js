@@ -23,6 +23,7 @@ class App extends Component {
               />
             </div>
             <div className="divider" />
+            {/*~~~~~~~~~~~ CONTACT INFO SECTION ~~~~~~~~~~~~*/}
             <div className="left-brdr contact">
               <i className="fas fa-mobile-alt" />
               <h4>+ 1 337-303-8848</h4>
@@ -34,6 +35,7 @@ class App extends Component {
               <h4>www.jkirbycampbell.com</h4>
             </div>
             <div className="divider" />
+            {/*~~~~~~~~~~~ ADDITIONAL SKILLS SECTION ~~~~~~~~~~~~*/}
             <div className="left-brdr">Row 3</div>
             <div className="divider" />
             <div className="left-brdr">Row 4</div>
@@ -43,7 +45,24 @@ class App extends Component {
           </div>
           <div className="right-block">
             <div className="right-grid">
-              <div className="right-brdr">Row 1</div>
+              <div className="right-brdr">
+                <h2>Summary of Skills</h2>
+                <ul>
+                  <h5>FullStack Web Development</h5>
+                  <li>
+                    <p>
+                      Built cutting edge Web Applications using React Hooks,
+                      Javascript ES6, GraphQL Databases.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Deployed Several Projects onto AWS and Heroku along with
+                      custom Backends hosted with Rails, Graphql, and FireStore.
+                    </p>
+                  </li>
+                </ul>
+              </div>
               <div className="divider" />
               <div className="right-brdr">Row 2</div>
               <div className="divider" />
