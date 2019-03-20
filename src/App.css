@@ -17,24 +17,23 @@
 
 .main-container {
   display: grid;
-  grid-gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
+  grid-gap: 4%;
+  padding: 4%;
 }
 
 .left-sidebar {
   position: fixed;
-  left: 0;
-  width: 40%;
-  height: 80vh;
+  left: 5%;
+  width: 25%;
+  height: 70vh;
   background-color: #d2fb61;
 }
 
 .right-block {
   position: fixed;
   width: 60%;
-  right: 0;
-  height: 80vh;
+  right: 5%;
+  height: 70vh;
   background-color: #fb6161;
 }
 
