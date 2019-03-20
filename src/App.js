@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
@@ -16,9 +15,24 @@ class App extends Component {
         <div className="main-container">
           {" "}
           <div className="left-sidebar">
-            <div className="left-brdr">Row 1</div>
+            <div className="left-brdr">
+              <img
+                className="prof-pic"
+                src="https://pbs.twimg.com/profile_images/1106256070492614657/Qra_Davu_400x400.jpg"
+                alt="prof-pic"
+              />
+            </div>
             <div className="divider" />
-            <div className="left-brdr">Row 2</div>
+            <div className="left-brdr contact">
+              <i className="fas fa-mobile-alt" />
+              <h4>+ 1 337-303-8848</h4>
+              <i className="far fa-envelope" />
+              <h4 style={{ fontSize: "16px" }}>jKirbyCampbell@gmail.com</h4>
+              <i className="fas fa-map-pin" />
+              <h4>Portland, OR</h4>
+              <i className="far fa-id-badge" />
+              <h4>www.jkirbycampbell.com</h4>
+            </div>
             <div className="divider" />
             <div className="left-brdr">Row 3</div>
             <div className="divider" />
