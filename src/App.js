@@ -16,11 +16,16 @@ class App extends Component {
         <div className="main-container">
           {" "}
           <div className="left-sidebar">
-            <div className="left-grid1">Row 1</div>
-            <div className="left-grid2">Row 2</div>
-            <div className="left-grid3">Row 3</div>
-            <div className="left-grid4">Row 4</div>
-            <div className="left-grid5">Row 5</div>
+            <div className="left-brdr">Row 1</div>
+            <div className="divider" />
+            <div className="left-brdr">Row 2</div>
+            <div className="divider" />
+            <div className="left-brdr">Row 3</div>
+            <div className="divider" />
+            <div className="left-brdr">Row 4</div>
+            <div className="divider" />
+            <div className="left-brdr">Row 5</div>
+            <div className="divider" />
           </div>
           <div className="right-block">
             <div className="right-grid" />
