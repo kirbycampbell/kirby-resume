@@ -28,7 +28,14 @@ class App extends Component {
             <div className="divider" />
           </div>
           <div className="right-block">
-            <div className="right-grid" />
+            <div className="right-grid">
+              <div className="right-brdr">Row 1</div>
+              <div className="divider" />
+              <div className="right-brdr">Row 2</div>
+              <div className="divider" />
+              <div className="right-brdr">Row 3</div>
+              <div className="divider" />
+            </div>
           </div>
         </div>
       </div>
