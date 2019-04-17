@@ -10,7 +10,7 @@ class App extends Component {
           <h1>Kirby Campbell</h1>
         </div>
         <div className="job-bnr">
-          <h1>FullStack Web Developer</h1>
+          <h2>FullStack Web Developer</h2>
         </div>
         <div className="main-container">
           {" "}
