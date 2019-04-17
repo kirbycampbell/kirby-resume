@@ -7,8 +7,11 @@ const App = () => {
 
   const handleContactClick = item => {
     const number = "337-303-8848";
-    const email =
-      '<a href="mailto:jkirbycampbell@gmail.com">jkirbycampbell@gmail.com</a>';
+    const email = (
+      <a href="mailto:jkirbycampbell@gmail.com" className="email">
+        jkirbycampbell@gmail.com
+      </a>
+    );
     const location = "Portland, Oregon - USA";
     switch (item) {
       case "phone":
@@ -19,17 +22,10 @@ const App = () => {
         }
         break;
       case "email":
-        if (
-          contactItem ===
-          <a href="mailto:jkirbycampbell@gmail.com">jkirbycampbell@gmail.com</a>
-        ) {
+        if (contactItem.toString() === email.toString()) {
           setContactItem("");
         } else {
-          setContactItem(
-            <a href="mailto:jkirbycampbell@gmail.com">
-              jkirbycampbell@gmail.com
-            </a>
-          );
+          setContactItem(email);
         }
         break;
       case "location":
@@ -51,14 +47,16 @@ const App = () => {
     return (
       <div className="App">
         <div className="border" />
-        <div className="name-pic">
-          <img
-            className="phone-prof-pic"
-            src="https://pbs.twimg.com/profile_images/1106256070492614657/Qra_Davu_400x400.jpg"
-            alt="prof-pic"
-          />
-          <h1>Kirby Campbell</h1>
-          <i className="fas fa-bars phone-bars" />
+        <div className="backgroundTop">
+          <div className="name-pic">
+            <img
+              className="phone-prof-pic"
+              src="https://pbs.twimg.com/profile_images/1106256070492614657/Qra_Davu_400x400.jpg"
+              alt="prof-pic"
+            />
+            <h1>Kirby Campbell</h1>
+            <i className="fas fa-bars phone-bars" />
+          </div>
         </div>
         <div className="phone-contact-bar">
           <i
@@ -77,10 +75,31 @@ const App = () => {
           />
         </div>
         <div className="xtra-contact">{contactItem}</div>
-        <div
-          className="restofContent"
-          onMouseDown={() => handleRandomClick()}
-        />
+        <div className="restofContent" onMouseDown={() => handleRandomClick()}>
+          <div className="phone-skills">
+            <h1>Skills</h1>
+            <div>
+              <h5>FullStack Web Development</h5>
+
+              <p>
+                {" "}
+                React
+                <i className="fas fa-circle balls" />
+                <i className="fas fa-circle balls" />
+                <i className="fas fa-circle balls" />
+                <i className="fas fa-circle balls" />
+                <i className="fas fa-circle balls" />
+                Built cutting edge Web Applications using React Hooks,
+                Javascript ES6, GraphQL Databases.
+              </p>
+
+              <p>
+                Deployed Several Projects onto AWS and Heroku along with custom
+                Backends hosted with Rails, Graphql, and FireStore.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   } else if (!matches) {
