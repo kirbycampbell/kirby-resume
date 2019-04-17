@@ -1,47 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { contact } from "../Kirby_Info/ContactData";
-import { rank, fiveBalls } from "../Kirby_Info/RankBalls.js";
+import { rank } from "../Kirby_Info/RankBalls.js";
 import "./PhoneView.css";
+import Contacts from "./Contacts";
 
 const PhoneView = () => {
-  const [contactItem, setContactItem] = useState("");
-
-  const handleContactClick = item => {
-    const email = (
-      <a href="mailto:jkirbycampbell@gmail.com" className="email">
-        {contact.email}
-      </a>
-    );
-    switch (item) {
-      case "phone":
-        if (contactItem === contact.number) {
-          setContactItem("");
-        } else {
-          setContactItem(contact.number);
-        }
-        break;
-      case "email":
-        if (contactItem.toString() === email.toString()) {
-          setContactItem("");
-        } else {
-          setContactItem(email);
-        }
-        break;
-      case "location":
-        if (contactItem === contact.location) {
-          setContactItem("");
-        } else {
-          setContactItem(contact.location);
-        }
-        break;
-      default:
-        setContactItem("");
-        break;
-    }
-  };
-  const handleRandomClick = () => {
-    setContactItem("");
-  };
   return (
     <div className="App">
       <div className="border" />
@@ -56,24 +19,8 @@ const PhoneView = () => {
           <i className="fas fa-bars phone-bars" />
         </div>
       </div>
-      <div className="phone-contact-bar">
-        <i
-          className="fas fa-mobile-alt"
-          onClick={() => handleContactClick("phone")}
-        />
-
-        <i
-          className="far fa-envelope"
-          onClick={() => handleContactClick("email")}
-        />
-
-        <i
-          className="fas fa-map-pin"
-          onClick={() => handleContactClick("location")}
-        />
-      </div>
-      <div className="xtra-contact">{contactItem}</div>
-      <div className="restofContent" onMouseDown={() => handleRandomClick()}>
+      <Contacts />
+      <div className="restofContent">
         <div className="phone-skills">
           <h1>Skills</h1>
           <div>
