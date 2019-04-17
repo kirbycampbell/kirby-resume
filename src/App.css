@@ -169,8 +169,19 @@
     align-items: center;
     margin: auto;
   }
+  .xtra-contact {
+    margin: auto;
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
   h4 {
     font-size: 12px;
+  }
+  .restofContent {
+    height: 600px;
+    background: blue;
   }
 
   .divider {

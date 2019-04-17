@@ -1,8 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { unstable_useMediaQuery as useMediaQuery } from "@material-ui/core/useMediaQuery";
 import "./App.css";
 
 const App = () => {
+  const [contactItem, setContactItem] = useState("");
+
+  const handleContactClick = item => {
+    const number = "337-303-8848";
+    const email =
+      '<a href="mailto:jkirbycampbell@gmail.com">jkirbycampbell@gmail.com</a>';
+    const location = "Portland, Oregon - USA";
+    switch (item) {
+      case "phone":
+        if (contactItem === number) {
+          setContactItem("");
+        } else {
+          setContactItem(number);
+        }
+        break;
+      case "email":
+        if (
+          contactItem ===
+          <a href="mailto:jkirbycampbell@gmail.com">jkirbycampbell@gmail.com</a>
+        ) {
+          setContactItem("");
+        } else {
+          setContactItem(
+            <a href="mailto:jkirbycampbell@gmail.com">
+              jkirbycampbell@gmail.com
+            </a>
+          );
+        }
+        break;
+      case "location":
+        if (contactItem === location) {
+          setContactItem("");
+        } else {
+          setContactItem("Portland, Oregon - USA");
+        }
+    }
+  };
+
+  const handleRandomClick = () => {
+    setContactItem("");
+  };
+
   const matches = useMediaQuery("(max-width:900px)");
   // ::::::::::::::: PHONE VIEW RIGHT HERE BOIIIII ::::::::::::::::::
   if (matches) {
@@ -19,15 +61,29 @@ const App = () => {
           <i className="fas fa-bars phone-bars" />
         </div>
         <div className="phone-contact-bar">
-          <i className="fas fa-mobile-alt" />
+          <i
+            className="fas fa-mobile-alt"
+            onClick={() => handleContactClick("phone")}
+          />
 
-          <i className="far fa-envelope" />
+          <i
+            className="far fa-envelope"
+            onClick={() => handleContactClick("email")}
+          />
 
-          <i className="fas fa-map-pin" />
+          <i
+            className="fas fa-map-pin"
+            onClick={() => handleContactClick("location")}
+          />
         </div>
+        <div className="xtra-contact">{contactItem}</div>
+        <div
+          className="restofContent"
+          onMouseDown={() => handleRandomClick()}
+        />
       </div>
     );
-  } else {
+  } else if (!matches) {
     // :::::::::::: DESKTOP VIEW RIGHT HERE GIRLLLL ::::::::::::::::::
     return (
       <div className="App">
