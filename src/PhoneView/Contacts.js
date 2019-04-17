@@ -7,23 +7,29 @@ const Contacts = () => {
   const node = useRef();
   const [open, setOpen] = useState(false);
 
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // :::::::::::: Click Outside Component listener :::::::::::::::::::::::::::::::
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   useEffect(() => {
     document.addEventListener("mousedown", handleClick);
-
     return () => {
       document.removeEventListener("mousedown", handleClick);
     };
   }, []);
 
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // :::::::::::::: Handle Click outside of Component ::::::::::::::::::::::::::::::::::::
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   const handleClick = e => {
     if (node.current.contains(e.target)) {
-      // inside click
       return;
     }
-    // outside click
     setOpen(false);
   };
 
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // ::::::::::::::::::: Determine Which Contact to Render :::::::::::::::::::::::::::::
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   const handleContactClick = item => {
     const email = (
       <a href="mailto:jkirbycampbell@gmail.com" className="email">
@@ -31,7 +37,7 @@ const Contacts = () => {
       </a>
     );
     switch (item) {
-      case "phone":
+      case "phone": // if button = phone
         if (contactItem === contact.number) {
           setContactItem("");
         } else {
@@ -39,7 +45,7 @@ const Contacts = () => {
           setOpen(true);
         }
         break;
-      case "email":
+      case "email": // if button = email
         if (contactItem.toString() === email.toString()) {
           setContactItem("");
         } else {
@@ -47,7 +53,7 @@ const Contacts = () => {
           setOpen(true);
         }
         break;
-      case "location":
+      case "location": // if button = location
         if (contactItem === contact.location) {
           setContactItem("");
         } else {
@@ -56,13 +62,17 @@ const Contacts = () => {
         }
         break;
       default:
+        // if nothing...
         setContactItem("");
         break;
     }
   };
-
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // ::::::::::::::::::::: Main Return for Contacts.js ::::::::::::::::::::::::::::::::::
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   return (
     <div ref={node}>
+      {/*:::::::::::::::::::::::::: Contact Buttons :::::::::::::::::::::::::::  */}
       <div className="phone-contact-bar">
         <i
           className="fas fa-mobile-alt"
@@ -79,6 +89,7 @@ const Contacts = () => {
           onClick={() => handleContactClick("location")}
         />
       </div>
+      {/*:::::::::::::: If open=true Render Extra Contact Info ::::::::::::::::::::  */}
       {open && <div className="xtra-contact">{contactItem}</div>}
     </div>
   );
