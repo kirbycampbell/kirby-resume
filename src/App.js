@@ -41,9 +41,10 @@ const App = () => {
     setContactItem("");
   };
 
-  const matches = useMediaQuery("(max-width:900px)");
+  const phoneScreen = useMediaQuery("(max-width:900px)");
+  const DesktopScreen = useMediaQuery("(min-width:900px");
   // ::::::::::::::: PHONE VIEW RIGHT HERE BOIIIII ::::::::::::::::::
-  if (matches) {
+  if (phoneScreen) {
     return (
       <div className="App">
         <div className="border" />
@@ -102,7 +103,7 @@ const App = () => {
         </div>
       </div>
     );
-  } else if (!matches) {
+  } else if (DesktopScreen && !phoneScreen) {
     // :::::::::::: DESKTOP VIEW RIGHT HERE GIRLLLL ::::::::::::::::::
     return (
       <div className="App">
@@ -174,6 +175,8 @@ const App = () => {
         </div>
       </div>
     );
+  } else {
+    return <div>Loading...</div>;
   }
 };
 
