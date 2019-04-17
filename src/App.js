@@ -1,8 +1,34 @@
-import React, { Component } from "react";
+import React from "react";
+import { unstable_useMediaQuery as useMediaQuery } from "@material-ui/core/useMediaQuery";
 import "./App.css";
 
-class App extends Component {
-  render() {
+const App = () => {
+  const matches = useMediaQuery("(max-width:900px)");
+  // ::::::::::::::: PHONE VIEW RIGHT HERE BOIIIII ::::::::::::::::::
+  if (matches) {
+    return (
+      <div className="App">
+        <div className="border" />
+        <div className="name-pic">
+          <img
+            className="phone-prof-pic"
+            src="https://pbs.twimg.com/profile_images/1106256070492614657/Qra_Davu_400x400.jpg"
+            alt="prof-pic"
+          />
+          <h1>Kirby Campbell</h1>
+          <i className="fas fa-bars phone-bars" />
+        </div>
+        <div className="phone-contact-bar">
+          <i className="fas fa-mobile-alt" />
+
+          <i className="far fa-envelope" />
+
+          <i className="fas fa-map-pin" />
+        </div>
+      </div>
+    );
+  } else {
+    // :::::::::::: DESKTOP VIEW RIGHT HERE GIRLLLL ::::::::::::::::::
     return (
       <div className="App">
         <div className="border" />
@@ -74,6 +100,6 @@ class App extends Component {
       </div>
     );
   }
-}
+};
 
 export default App;
