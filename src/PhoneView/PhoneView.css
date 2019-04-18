@@ -63,22 +63,39 @@
   h4 {
     font-size: 12px;
   }
-  .restofContent {
-    height: 600px;
+  .skill-container {
+    height: 200px;
+    margin-top: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.342);
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .skillRow {
+    float: left;
+    grid-template-columns: 25% 10% 25% 15%;
+    width: 25%;
+  }
+
+  .skillItem {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 2px;
   }
   h1 {
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 8px;
   }
   h5 {
     font-size: 16px;
+    margin: 5px;
     text-align: center;
   }
   .phone-skills {
     width: 90%;
     margin: auto;
-  }
-  .balls {
-    font-size: 10px;
   }
 
   .divider {

@@ -1,6 +1,6 @@
 export const codeSkills = [
   "React",
-  "Javascript (ES6)",
+  "Javascript",
   "GraphQL",
   "HTML/CSS",
   "GitHub",

@@ -1,4 +1,5 @@
 import React from "react";
+import "./RankBalls.css";
 
 export const fiveBalls = (
   <React.Fragment>

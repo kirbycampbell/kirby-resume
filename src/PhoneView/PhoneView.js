@@ -1,6 +1,7 @@
 import React from "react";
 import { contact } from "../Kirby_Info/ContactData";
 import { rank } from "../Kirby_Info/RankBalls.js";
+import { codeSkills } from "../Kirby_Info/SkillsData.js";
 import "./Contacts.css";
 import Contacts from "./Contacts";
 
@@ -12,7 +13,7 @@ const PhoneView = () => {
         <img
           className="pic-banner"
           src="https://i.imgur.com/vQ74c4y.jpg"
-          alt="ocean photo"
+          alt="ocean"
         />
         <div className="name-pic">
           <img
@@ -25,24 +26,35 @@ const PhoneView = () => {
         </div>
       </div>
       <Contacts />
-      <div className="restofContent">
+      <div className="skill-container">
         <div className="phone-skills">
           <h1>Skills</h1>
           <div>
             <h5>FullStack Web Development</h5>
+            <div className="skillRow">
+              <div className="skillItem">{codeSkills[0]}</div>
 
-            <p>
-              {" "}
-              React
-              {rank.three}
-              Built cutting edge Web Applications using React Hooks, Javascript
-              ES6, GraphQL Databases.
-            </p>
+              <div className="skillItem">{codeSkills[2]}</div>
+              <div className="skillItem">{codeSkills[4]}</div>
+            </div>
+            <div className="skillRow">
+              <div className="skillItem">{rank.five}</div>
 
-            <p>
-              Deployed Several Projects onto AWS and Heroku along with custom
-              Backends hosted with Rails, Graphql, and FireStore.
-            </p>
+              <div className="skillItem">{rank.three}</div>
+              <div className="skillItem">{rank.five}</div>
+            </div>
+            <div className="skillRow">
+              <div className="skillItem">{codeSkills[1]}</div>
+
+              <div className="skillItem">{codeSkills[3]}</div>
+              <div className="skillItem">{codeSkills[5]}</div>
+            </div>
+            <div className="skillRow">
+              <div className="skillItem">{rank.five}</div>
+
+              <div className="skillItem">{rank.five}</div>
+              <div className="skillItem">{rank.four}</div>
+            </div>
           </div>
         </div>
       </div>
