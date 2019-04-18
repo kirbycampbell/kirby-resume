@@ -1,7 +1,7 @@
 import React from "react";
 import { contact } from "../Kirby_Info/ContactData";
 import { rank } from "../Kirby_Info/RankBalls.js";
-import "./PhoneView.css";
+import "./Contacts.css";
 import Contacts from "./Contacts";
 
 const PhoneView = () => {
@@ -9,6 +9,11 @@ const PhoneView = () => {
     <div className="App">
       <div className="border" />
       <div className="backgroundTop">
+        <img
+          className="pic-banner"
+          src="https://i.imgur.com/vQ74c4y.jpg"
+          alt="ocean photo"
+        />
         <div className="name-pic">
           <img
             className="phone-prof-pic"
