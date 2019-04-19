@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { contact } from "../Kirby_Info/ContactData";
 import { rank } from "../Kirby_Info/RankBalls.js";
 import { codeSkills } from "../Kirby_Info/SkillsData.js";
 import "./Contacts.css";
 import Contacts from "./Contacts";
+import { Transition } from "react-transition-group";
+
+const duration = 300;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0
+};
+
+const transitionStyles = {
+  entering: { opacity: 1 },
+  entered: { opacity: 1 },
+  exiting: { opacity: 0 },
+  exited: { opacity: 0 }
+};
 
 const PhoneView = () => {
+  const [inProp, setInProp] = useState(false);
   return (
     <div className="App">
       <div className="border" />
