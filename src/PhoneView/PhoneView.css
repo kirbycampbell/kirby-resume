@@ -63,6 +63,22 @@
   h4 {
     font-size: 12px;
   }
+
+  .skills-title {
+    font-size: 28px;
+    font-weight: bold;
+    width: 20%;
+    margin: auto;
+  }
+  .skill-key {
+    font-size: 10px;
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .skill-key i {
+    font-size: 6px;
+  }
   .skill-container {
     display: flex;
     padding-bottom: 20px;

@@ -14,7 +14,7 @@ export const codeSkills = [
   "Heroku",
   "Ruby",
   "jQuery",
-  "AWS"
+  "C++"
 ];
 
 export const programs = [

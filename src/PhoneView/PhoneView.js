@@ -28,9 +28,14 @@ const PhoneView = () => {
       <Contacts />
       <div className="skill-container">
         <div className="phone-skills">
-          <h1>Skills</h1>
+          <div className="skills-title">Skills</div>
+
           <div>
             <h5>FullStack Web Development</h5>
+            <div className="skill-key">
+              {rank.two} = Familiar || {rank.three} = Comfortable || {rank.four}{" "}
+              = Skilled || {rank.five} = Expert
+            </div>
             <div className="skillRow">
               <div className="skillItem">{codeSkills[0]}</div> {/* React */}
               <div className="skillItem">{codeSkills[4]}</div> {/* GitHub */}
@@ -59,7 +64,7 @@ const PhoneView = () => {
               <div className="skillItem">{codeSkills[5]}</div> {/* Redux */}
               <div className="skillItem">{codeSkills[9]}</div> {/* Amplify */}
               <div className="skillItem">{codeSkills[11]}</div> {/* Firebase */}
-              <div className="skillItem">{codeSkills[15]}</div> {/* AWS */}
+              <div className="skillItem">{codeSkills[15]}</div> {/* C++ */}
               <div className="skillItem">{codeSkills[7]}</div> {/* Vue */}
             </div>
             <div className="skillRow">
@@ -69,7 +74,7 @@ const PhoneView = () => {
               <div className="skillItem">{rank.four}</div> {/* Redux */}
               <div className="skillItem">{rank.four}</div> {/* Amplify */}
               <div className="skillItem">{rank.three}</div> {/* Firebase */}
-              <div className="skillItem">{rank.two}</div> {/* AWS */}
+              <div className="skillItem">{rank.three}</div> {/* C++ */}
               <div className="skillItem">{rank.two}</div> {/* Vue */}
             </div>
           </div>
