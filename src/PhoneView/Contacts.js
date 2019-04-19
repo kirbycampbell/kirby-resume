@@ -67,7 +67,7 @@ const Contacts = () => {
         }
         break;
       case "email": // if button = email
-        if (contactItem.toString() === email.toString()) {
+        if (contactItem.toString() === email.toString() && open) {
           //setContactItem("");
           setShowButton(true);
           setOpen(false);

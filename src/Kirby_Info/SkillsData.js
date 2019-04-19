@@ -8,12 +8,13 @@ export const codeSkills = [
   "Rails",
   "Vue",
   "SQL",
-  "AWS Amplify",
-  "AWS AppSync",
+  "Amplify",
+  "AppSync",
   "FireBase",
   "Heroku",
   "Ruby",
-  "jQuery"
+  "jQuery",
+  "AWS"
 ];
 
 export const programs = [

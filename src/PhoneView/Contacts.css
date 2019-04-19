@@ -8,7 +8,7 @@
 }
 .xtra-contact {
   margin: auto;
-
+  height: 20px;
   margin-top: 12px;
   margin-bottom: 8px;
   text-align: center;
@@ -29,12 +29,12 @@
 }
 .alert-enter {
   opacity: 0;
-  transform: scale(0.9);
+  transform: scale(0.2);
 }
 .alert-enter-active {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 500ms, transform 500ms;
 }
 .alert-exit {
   opacity: 1;
@@ -42,5 +42,5 @@
 .alert-exit-active {
   opacity: 0;
   transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 700ms, transform 700ms;
 }
