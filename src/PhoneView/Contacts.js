@@ -42,6 +42,7 @@ const Contacts = () => {
       return;
     }
     setOpen(false);
+    setShowButton(false);
   };
 
   // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -57,29 +58,32 @@ const Contacts = () => {
     switch (item) {
       case "phone": // if button = phone
         if (contactItem === contact.number) {
-          setContactItem("");
+          //setContactItem("");
+          setShowButton(true);
+          setOpen(false);
         } else {
           setContactItem(contact.number);
           setOpen(true);
-          setShowButton(false);
         }
         break;
       case "email": // if button = email
         if (contactItem.toString() === email.toString()) {
-          setContactItem("");
+          //setContactItem("");
+          setShowButton(true);
+          setOpen(false);
         } else {
           setContactItem(email);
           setOpen(true);
-          setShowButton(false);
         }
         break;
       case "location": // if button = location
         if (contactItem === contact.location) {
-          setContactItem("");
+          //setContactItem("");
+          setShowButton(true);
+          setOpen(false);
         } else {
           setContactItem(contact.location);
           setOpen(true);
-          setShowButton(false);
         }
         break;
       default:
