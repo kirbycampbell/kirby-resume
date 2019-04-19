@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { contact } from "../Kirby_Info/ContactData";
 import "./PhoneView.css";
-import { Transition } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 
 const duration = 300;
 
@@ -21,6 +21,8 @@ const Contacts = () => {
   const [contactItem, setContactItem] = useState("");
   const node = useRef();
   const [open, setOpen] = useState(false);
+  const [showButton, setShowButton] = useState(true);
+  const [showMessage, setShowMessage] = useState(false);
 
   // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   // :::::::::::: Click Outside Component listener :::::::::::::::::::::::::::::::
@@ -51,6 +53,7 @@ const Contacts = () => {
         {contact.email}
       </a>
     );
+
     switch (item) {
       case "phone": // if button = phone
         if (contactItem === contact.number) {
@@ -58,6 +61,7 @@ const Contacts = () => {
         } else {
           setContactItem(contact.number);
           setOpen(true);
+          setShowButton(false);
         }
         break;
       case "email": // if button = email
@@ -66,6 +70,7 @@ const Contacts = () => {
         } else {
           setContactItem(email);
           setOpen(true);
+          setShowButton(false);
         }
         break;
       case "location": // if button = location
@@ -74,11 +79,14 @@ const Contacts = () => {
         } else {
           setContactItem(contact.location);
           setOpen(true);
+          setShowButton(false);
         }
         break;
       default:
         // if nothing...
         setContactItem("");
+        setOpen(false);
+        setShowButton(false);
         break;
     }
   };
@@ -105,7 +113,17 @@ const Contacts = () => {
         />
       </div>
       {/*:::::::::::::: If open=true Render Extra Contact Info ::::::::::::::::::::  */}
-      {open && <div className="xtra-contact">{contactItem}</div>}
+
+      <CSSTransition
+        in={open}
+        timeout={400}
+        classNames="alert"
+        unmountOnExit
+        onEnter={() => setShowButton(false)}
+        onExited={() => setOpen(false)}
+      >
+        <div className="xtra-contact">{contactItem}</div>
+      </CSSTransition>
     </div>
   );
 };
