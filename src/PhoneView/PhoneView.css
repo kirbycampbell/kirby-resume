@@ -70,15 +70,7 @@
     width: 20%;
     margin: auto;
   }
-  .skill-key {
-    font-size: 10px;
-    margin: 5px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .skill-key i {
-    font-size: 6px;
-  }
+
   .skill-container {
     display: flex;
     padding-bottom: 10px;
@@ -92,25 +84,16 @@
   .skill-container:hover {
     box-shadow: 3px 2px #2e1c499d;
   }
-
-  .skillRow {
-    float: left;
-    grid-template-columns: 25% 10% 25% 15%;
-    width: 25%;
-  }
-
-  .skillItem {
-    content: "";
-    display: table;
-    clear: both;
-    margin: 2px;
-    border: 1px dotted rgba(0, 0, 0, 0.115);
-    border-radius: 3px;
+  .divider {
     width: 100%;
-  }
-  .skillItem:hover {
-    box-shadow: 1px 1px 2px 2px #2e1c499d;
-    cursor: pointer;
+    height: 4px;
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 101, 163, 0.38),
+      rgb(61, 60, 134, 0.38),
+      rgb(173, 72, 94, 0.38)
+    );
+    border-radius: 6px;
   }
 
   h1 {
@@ -128,33 +111,11 @@
     margin: auto;
   }
 
-  .divider {
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 101, 163, 0.88),
-      rgb(61, 60, 134, 0.88),
-      rgb(173, 72, 94, 0.88)
-    );
+  .project-container {
+    font-size: 20px;
+    padding: 5px;
+    height: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.155);
     border-radius: 6px;
-    width: 100%;
-  }
-
-  .right-block {
-    display: grid;
-    width: 100%;
-    height: 80%;
-    /* background-color: #fb6161; */
-  }
-
-  .right-grid {
-    grid-template-rows: 29.5% 0.5% 40% 0.5% 25% 0.5%;
-    display: grid;
-    grid-gap: 0.5%;
-    height: 100%;
-  }
-
-  .right-brdr {
-    border: 1px solid rgba(0, 0, 0, 0.13);
-    border-radius: 10px;
   }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { contact } from "../Kirby_Info/ContactData";
-
 import "./Contacts.css";
 import Contacts from "./Contacts";
 import SkillList from "./SkillList";
@@ -25,6 +24,7 @@ const PhoneView = () => {
           <i className="fas fa-bars phone-bars" />
         </div>
       </div>
+
       <Contacts />
       <div className="skill-container">
         <div className="phone-skills">
@@ -33,6 +33,8 @@ const PhoneView = () => {
           <SkillList />
         </div>
       </div>
+      <div className="divider" />
+      <div className="project-container">Projects here</div>
     </div>
   );
 };

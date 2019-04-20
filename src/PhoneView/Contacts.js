@@ -57,7 +57,7 @@ const Contacts = () => {
 
     switch (item) {
       case "phone": // if button = phone
-        if (contactItem === contact.number) {
+        if (contactItem === contact.number && open) {
           //setContactItem("");
           setShowButton(true);
           setOpen(false);
@@ -77,7 +77,7 @@ const Contacts = () => {
         }
         break;
       case "location": // if button = location
-        if (contactItem === contact.location) {
+        if (contactItem === contact.location && open) {
           //setContactItem("");
           setShowButton(true);
           setOpen(false);

@@ -1,0 +1,29 @@
+.skill-key {
+  font-size: 10px;
+  margin: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.skill-key i {
+  font-size: 6px;
+}
+
+.skillRow {
+  float: left;
+  grid-template-columns: 25% 10% 25% 15%;
+  width: 25%;
+}
+
+.skillItem {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 2px;
+  border: 1px dotted rgba(0, 0, 0, 0.115);
+  border-radius: 3px;
+  width: 100%;
+}
+.skillItem:hover {
+  box-shadow: 1px 1px 2px 2px #2e1c499d;
+  cursor: pointer;
+}
