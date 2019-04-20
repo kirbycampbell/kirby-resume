@@ -24,26 +24,11 @@
     font-size: 12px;
   }
 
-  .skills-title {
-    text-align: center;
-    display: flex;
-    font-size: 28px;
-    font-weight: bold;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 6px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-  }
-
   .skill-container {
     display: flex;
     padding-bottom: 10px;
-
     border: 2px solid rgba(0, 0, 0, 0.142);
     border-radius: 6px;
-
     text-align: center;
   }
 
@@ -77,20 +62,7 @@
     margin: auto;
   }
 
-  .project-title {
-    text-align: center;
-    display: flex;
-    font-size: 28px;
-    font-weight: bold;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 6px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .education-title {
+  .titles {
     text-align: center;
     display: flex;
     font-size: 28px;
