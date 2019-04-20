@@ -40,15 +40,16 @@ export const lifeSkills = {
 };
 
 export const education = {
-  1: {
+  coding: {
     name: "Flatiron FullStack Dev Bootcamp Graduate",
     date: "April '18 - Jan '19",
-    explain: "Focused on Ruby, SQL, Rails, Javascript, jQuery, React, & Redux"
+    explain: "Focus: Ruby, SQL, Rails, Javascript, jQuery, React, & Redux"
   },
-  2: {
+  college: {
     name: "Portland Community College",
     date: "April '18 - Present",
-    explain: "4.0 GPA Computer Science Major - (Part Time when working)"
+    explain: "Focus: Computer Science Major (4.0 GPA)",
+    extra: "Part-Time student once I'm full-time employed."
   }
 };
 

@@ -1,0 +1,32 @@
+.outer-education {
+  border: 2px solid grey;
+  height: 200px;
+  margin: auto;
+  padding: 4px;
+}
+
+.inner-education {
+  display: flex;
+  float: left;
+  width: 25%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inner-right-edu {
+  display: flex;
+  float: right;
+  width: 75%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}

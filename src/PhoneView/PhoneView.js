@@ -4,6 +4,7 @@ import Contacts from "./Contacts";
 import SkillList from "./SkillList";
 import ProjectContainer from "./ProjectContainer";
 import NavBar from "./NavBar";
+import Education from "./Education";
 
 const PhoneView = () => {
   const [projectShow, setProjectShow] = useState(false);
@@ -42,6 +43,7 @@ const PhoneView = () => {
       <div className="divider" />
       <div className="education-title">Education</div>
       <div className="divider" />
+      <Education />
     </div>
   );
 };
