@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { contact } from "../Kirby_Info/ContactData";
-import "./PhoneView.css";
+import { contact } from "../../Kirby_Info/ContactData";
+import "../PhoneView.css";
 import { CSSTransition } from "react-transition-group";
 
 const Contacts = () => {

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./Contacts.css";
-import Contacts from "./Contacts";
-import SkillList from "./SkillList";
-import ProjectContainer from "./ProjectContainer";
-import NavBar from "./NavBar";
-import Education from "./Education";
+import "./Contacts/Contacts.css";
+import Contacts from "./Contacts/Contacts.js";
+import SkillList from "./Skills/SkillList";
+import ProjectContainer from "./Projects/ProjectContainer";
+import NavBar from "./NavBar/NavBar";
+import Education from "./Education/Education";
 import Personality from "./Personality/Personality";
 import Programs from "./Programs/Programs";
 import Experience from "./Experience/Experience";

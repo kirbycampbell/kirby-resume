@@ -1,6 +1,6 @@
 import React from "react";
 import "./Education.css";
-import { education } from "../Kirby_Info/SkillsData.js";
+import { education } from "../../Kirby_Info/SkillsData.js";
 
 const Education = () => {
   return (

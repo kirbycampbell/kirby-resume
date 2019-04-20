@@ -1,6 +1,6 @@
 import React from "react";
-import { rank } from "../Kirby_Info/RankBalls.js";
-import { codeSkills } from "../Kirby_Info/SkillsData.js";
+import { rank } from "../../Kirby_Info/RankBalls.js";
+import { codeSkills } from "../../Kirby_Info/SkillsData.js";
 import "./SkillList.css";
 
 const SkillList = () => {

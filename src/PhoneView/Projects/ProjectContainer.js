@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectContainer.css";
-import { projects } from "../Kirby_Info/SkillsData";
+import { projects } from "../../Kirby_Info/SkillsData";
 
 const ProjectContainer = () => {
   return (

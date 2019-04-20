@@ -1,5 +1,5 @@
 import React from "react";
-import { contact } from "../Kirby_Info/ContactData";
+import { contact } from "../../Kirby_Info/ContactData";
 import "./NavBar.css";
 
 const NavBar = () => {
