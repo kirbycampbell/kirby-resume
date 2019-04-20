@@ -89,3 +89,42 @@ export const projects = {
   music: "Produced ~ 30 songs over last 5 years.",
   video: "Editor & Cinematographer of Virtual Reality Music Video"
 };
+
+export const experience = {
+  producerJob: {
+    name: "Music Producer",
+    years: "2011-Present",
+    desc: "Produced & Mixed ~ 45 songs",
+    work: "Large Project Management"
+  },
+  musicianJob: {
+    name: "Touring Musician",
+    years: "2010-2016",
+    desc: "Worked ~ 200 Days/Year",
+    work: "Drummer & Live Electronics"
+  },
+  uberJob: {
+    name: "Uber Driver",
+    years: "2015-2017",
+    desc: "Drove ~ 50 Hours/Week",
+    work: "4.93 Rating with 1000+ rides"
+  },
+  airbnbJob: {
+    name: "Managed 3 Short-Term Rentals",
+    years: "2015-2017",
+    desc: "Managed Booking & Upkeep",
+    work: "Concierge & Team Management"
+  },
+  stockJob: {
+    name: "Stock Trading",
+    years: "2017-Present",
+    desc: "Market & Fundamentals Awareness",
+    work: "Consistent 15% Gains each year"
+  },
+  miningJob: {
+    name: "Ethereum Crypto Mining",
+    years: "2017-Present",
+    desc: "Built Five 7-GPU Mining Rigs",
+    work: "Computer Building & Power Management"
+  }
+};
