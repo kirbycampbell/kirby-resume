@@ -1,3 +1,5 @@
+import React from "react";
+var emoji = require("node-emoji");
 export const codeSkills = [
   "React",
   "Javascript",
@@ -28,14 +30,18 @@ export const programs = [
   "After Effects"
 ];
 
-export const lifeSkills = {
-  1: {
-    name: "Hard & Diligent Worker",
-    desc: "Punctual, Driven, & Goal-Oriented"
+export const personality = {
+  trait1: {
+    name: `Hard & Diligent Worker ${emoji.get("coffee")}`,
+    desc: `Punctual, Driven, & Goal-Oriented ${emoji.get("bow_and_arrow")}`
   },
-  2: {
-    name: "Team Worker",
-    desc: "Great Leader & Listener"
+  trait2: {
+    name: `Team Worker ${emoji.get("muscle")}`,
+    desc: `Great Leader & Listener ${emoji.get("ear")}`
+  },
+  trait3: {
+    name: `Open, Respectful, & Forward-Thinking ${emoji.get("fast_forward")}`,
+    desc: `Accepting & Personable ${emoji.get("handshake")}`
   }
 };
 

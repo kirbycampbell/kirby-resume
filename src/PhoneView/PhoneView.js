@@ -11,7 +11,7 @@ const PhoneView = () => {
   const [projectShow, setProjectShow] = useState(false);
   const [skillShow, setSkillShow] = useState(false);
   const [educationShow, setEducationShow] = useState(false);
-  const [personalityShow, setPersonalityShow] = useState(true);
+  const [personalityShow, setPersonalityShow] = useState(false);
 
   const handleSkillShow = () => {
     setSkillShow(!skillShow);
