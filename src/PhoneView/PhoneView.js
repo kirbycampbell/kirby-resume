@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { contact } from "../Kirby_Info/ContactData";
 import "./Contacts.css";
 import Contacts from "./Contacts";
 import SkillList from "./SkillList";
-import { projects } from "../Kirby_Info/SkillsData";
+import ProjectContainer from "./ProjectContainer";
 
 const PhoneView = () => {
+  const [projectShow, setProjectShow] = useState(false);
+  const [skillShow, setSkillShow] = useState(false);
+
+  const handleSkillShow = () => {
+    setSkillShow(!skillShow);
+  };
+
+  const handleProjectShow = () => {
+    setProjectShow(!projectShow);
+  };
   return (
     <div className="App">
       <div className="border" />
@@ -27,41 +37,21 @@ const PhoneView = () => {
       </div>
 
       <Contacts />
-      <div className="skill-container">
-        <div className="phone-skills">
-          <div className="skills-title">Skills</div>
 
-          <SkillList />
-        </div>
+      <div className="divider" />
+      <div className="skills-title" onClick={handleSkillShow}>
+        Skills
       </div>
       <div className="divider" />
-      <div className="project-title">Projects</div>
-      <div className="project-container">
-        <div className="Row1">
-          <div className="project-row-left">
-            {projects.portfolio.name1}
-            <br /> {projects.portfolio.framework1} {projects.portfolio.backend1}{" "}
-            {projects.portfolio.hosted1}
-          </div>
-          <div className="project-row-left">
-            {projects.portfolio.name3}
-            <br /> {projects.portfolio.framework3} {projects.portfolio.backend3}{" "}
-            {projects.portfolio.hosted3}
-          </div>
-        </div>
-        <div className="Row1">
-          <div className="project-row-left">
-            {projects.portfolio.name2}
-            <br /> {projects.portfolio.framework2} {projects.portfolio.backend2}{" "}
-            {projects.portfolio.hosted2}
-          </div>
-          <div className="project-row-left">
-            {projects.portfolio.name4}
-            <br /> {projects.portfolio.framework4} {projects.portfolio.backend4}{" "}
-            {projects.portfolio.hosted4}
-          </div>
-        </div>
+      <div className="skill-container">
+        <div className="phone-skills">{skillShow && <SkillList />}</div>
       </div>
+      <div className="divider" />
+      <div className="project-title" onClick={handleProjectShow}>
+        Projects
+      </div>
+      <div className="divider" />
+      {projectShow && <ProjectContainer />}
     </div>
   );
 };

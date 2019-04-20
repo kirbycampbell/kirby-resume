@@ -54,12 +54,12 @@ export const education = {
 
 export const projects = {
   portfolio: {
-    name1: "Medium Creator (Blog Clone)",
+    name1: "Medium Clone (Blog Creator)",
     framework1: "React",
     backend1: "FireStore",
     hosted1: "Heroku",
 
-    name2: "WhatsApp (Chat App Clone)",
+    name2: "WhatsApp Clone (Chat App)",
     framework2: "React Hooks",
     backend2: "GraphQl & Amplify",
     hosted2: "AWS",
