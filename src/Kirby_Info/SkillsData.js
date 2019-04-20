@@ -1,4 +1,3 @@
-import React from "react";
 var emoji = require("node-emoji");
 export const codeSkills = [
   "React",

@@ -3,26 +3,10 @@ import { contact } from "../Kirby_Info/ContactData";
 import "./PhoneView.css";
 import { CSSTransition } from "react-transition-group";
 
-const duration = 300;
-
-const defaultStyle = {
-  transition: `opacity ${duration}ms ease-in-out`,
-  opacity: 0
-};
-
-const transitionStyles = {
-  entering: { opacity: 1 },
-  entered: { opacity: 1 },
-  exiting: { opacity: 0 },
-  exited: { opacity: 0 }
-};
-
 const Contacts = () => {
   const [contactItem, setContactItem] = useState("");
   const node = useRef();
   const [open, setOpen] = useState(false);
-  const [showButton, setShowButton] = useState(true);
-  const [showMessage, setShowMessage] = useState(false);
 
   // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   // :::::::::::: Click Outside Component listener :::::::::::::::::::::::::::::::
@@ -42,7 +26,6 @@ const Contacts = () => {
       return;
     }
     setOpen(false);
-    setShowButton(false);
   };
 
   // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -58,8 +41,6 @@ const Contacts = () => {
     switch (item) {
       case "phone": // if button = phone
         if (contactItem === contact.number && open) {
-          //setContactItem("");
-          setShowButton(true);
           setOpen(false);
         } else {
           setContactItem(contact.number);
@@ -68,8 +49,6 @@ const Contacts = () => {
         break;
       case "email": // if button = email
         if (contactItem.toString() === email.toString() && open) {
-          //setContactItem("");
-          setShowButton(true);
           setOpen(false);
         } else {
           setContactItem(email);
@@ -78,8 +57,6 @@ const Contacts = () => {
         break;
       case "location": // if button = location
         if (contactItem === contact.location && open) {
-          //setContactItem("");
-          setShowButton(true);
           setOpen(false);
         } else {
           setContactItem(contact.location);
@@ -90,7 +67,7 @@ const Contacts = () => {
         // if nothing...
         setContactItem("");
         setOpen(false);
-        setShowButton(false);
+
         break;
     }
   };
@@ -123,7 +100,6 @@ const Contacts = () => {
         timeout={400}
         classNames="alert"
         unmountOnExit
-        onEnter={() => setShowButton(false)}
         onExited={() => setOpen(false)}
       >
         <div className="xtra-contact">{contactItem}</div>
