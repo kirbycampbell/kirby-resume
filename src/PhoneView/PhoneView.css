@@ -25,12 +25,16 @@
   }
 
   .skills-title {
+    text-align: center;
+    display: flex;
     font-size: 28px;
     font-weight: bold;
+    height: 50px;
     width: 100%;
-    text-align: center;
-    margin: auto;
+    margin-bottom: 6px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
 
   .skill-container {
@@ -75,16 +79,27 @@
 
   .project-title {
     text-align: center;
+    display: flex;
     font-size: 28px;
     font-weight: bold;
+    height: 50px;
     width: 100%;
     margin-bottom: 6px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
 
   .education-title {
     text-align: center;
-    font-weight: bold;
+    display: flex;
     font-size: 28px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 6px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
 }

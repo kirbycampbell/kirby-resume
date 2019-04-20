@@ -9,6 +9,7 @@ import Education from "./Education";
 const PhoneView = () => {
   const [projectShow, setProjectShow] = useState(false);
   const [skillShow, setSkillShow] = useState(false);
+  const [educationShow, setEducationShow] = useState(false);
 
   const handleSkillShow = () => {
     setSkillShow(!skillShow);
@@ -16,6 +17,10 @@ const PhoneView = () => {
 
   const handleProjectShow = () => {
     setProjectShow(!projectShow);
+  };
+
+  const handleEducationShow = () => {
+    setEducationShow(!educationShow);
   };
   return (
     <div className="App">
@@ -41,9 +46,12 @@ const PhoneView = () => {
       {!projectShow && <div className="skill-container" />}
       {/*:::::::::: EDUCATION SECTION :::::::::: */}
       <div className="divider" />
-      <div className="education-title">Education</div>
+      <div className="education-title" onClick={handleEducationShow}>
+        Education
+      </div>
       <div className="divider" />
-      <Education />
+      {educationShow && <Education />}
+      {!educationShow && <div className="skill-container" />}
     </div>
   );
 };
