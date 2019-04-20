@@ -10,7 +10,6 @@
 
 .skillRow {
   float: left;
-  grid-template-columns: 25% 10% 25% 15%;
   width: 25%;
 }
 

@@ -111,11 +111,38 @@
     margin: auto;
   }
 
+  .project-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
   .project-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
     font-size: 20px;
     padding: 5px;
-    height: 200px;
+    height: 150px;
     border: 2px solid rgba(0, 0, 0, 0.155);
     border-radius: 6px;
+    width: 96%;
+    margin: auto;
+  }
+  .Row1 {
+    float: left;
+    width: 49%;
+    margin: auto;
+  }
+  .project-row-left {
+    margin: auto;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    cursor: pointer;
   }
 }

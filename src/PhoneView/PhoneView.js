@@ -3,6 +3,7 @@ import { contact } from "../Kirby_Info/ContactData";
 import "./Contacts.css";
 import Contacts from "./Contacts";
 import SkillList from "./SkillList";
+import { projects } from "../Kirby_Info/SkillsData";
 
 const PhoneView = () => {
   return (
@@ -34,7 +35,33 @@ const PhoneView = () => {
         </div>
       </div>
       <div className="divider" />
-      <div className="project-container">Projects here</div>
+      <div className="project-title">Projects</div>
+      <div className="project-container">
+        <div className="Row1">
+          <div className="project-row-left">
+            {projects.portfolio.name1}
+            <br /> {projects.portfolio.framework1} {projects.portfolio.backend1}{" "}
+            {projects.portfolio.hosted1}
+          </div>
+          <div className="project-row-left">
+            {projects.portfolio.name3}
+            <br /> {projects.portfolio.framework3} {projects.portfolio.backend3}{" "}
+            {projects.portfolio.hosted3}
+          </div>
+        </div>
+        <div className="Row1">
+          <div className="project-row-left">
+            {projects.portfolio.name2}
+            <br /> {projects.portfolio.framework2} {projects.portfolio.backend2}{" "}
+            {projects.portfolio.hosted2}
+          </div>
+          <div className="project-row-left">
+            {projects.portfolio.name4}
+            <br /> {projects.portfolio.framework4} {projects.portfolio.backend4}{" "}
+            {projects.portfolio.hosted4}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -28,39 +28,58 @@ export const programs = [
   "After Effects"
 ];
 
+export const lifeSkills = {
+  1: {
+    name: "Hard & Diligent Worker",
+    desc: "Punctual, Driven, & Goal-Oriented"
+  },
+  2: {
+    name: "Team Worker",
+    desc: "Great Leader & Listener"
+  }
+};
+
+export const education = {
+  1: {
+    name: "Flatiron FullStack Dev Bootcamp Graduate",
+    date: "April '18 - Jan '19",
+    explain: "Focused on Ruby, SQL, Rails, Javascript, jQuery, React, & Redux"
+  },
+  2: {
+    name: "Portland Community College",
+    date: "April '18 - Present",
+    explain: "4.0 GPA Computer Science Major - (Part Time when working)"
+  }
+};
+
 export const projects = {
   portfolio: {
-    1: {
-      name: "Medium Creator (Blog Clone)",
-      framework: "React",
-      backend: "FireStore",
-      hosted: "Heroku"
-    },
-    2: {
-      name: "WhatsApp (Chat App Clone)",
-      framework: "React Hooks",
-      backend: "GraphQl & Amplify",
-      hosted: "AWS"
-    },
-    3: {
-      name: "Beverage Manager",
-      framework: "React & Redux",
-      backend: "Ruby on Rails",
-      hosted: "Heroku & AWS"
-    },
-    4: {
-      name: "News Journal",
-      framework: "Vue",
-      backend: "None",
-      hosted: "Not Yet"
-    },
-    5: {
-      name: "Meditation Timer",
-      framework: "React Hooks",
-      backend: "None yet",
-      hosted: "Not yet"
-    }
+    name1: "Medium Creator (Blog Clone)",
+    framework1: "React",
+    backend1: "FireStore",
+    hosted1: "Heroku",
+
+    name2: "WhatsApp (Chat App Clone)",
+    framework2: "React Hooks",
+    backend2: "GraphQl & Amplify",
+    hosted2: "AWS",
+
+    name3: "Beverage Manager",
+    framework3: "React & Redux",
+    backend3: "Ruby on Rails",
+    hosted3: "Heroku & AWS",
+
+    name4: "News Journal",
+    framework4: "Vue",
+    backend4: "None",
+    hosted4: "Not Yet",
+
+    name5: "Meditation Timer",
+    framework5: "React Hooks",
+    backend5: "None yet",
+    hosted5: "Not yet"
   },
-  music: ["Produced ~ 30 songs over last 5 years."],
-  video: ["Editor & Cinematographer of Virtual Reality Music Video"]
+
+  music: "Produced ~ 30 songs over last 5 years.",
+  video: "Editor & Cinematographer of Virtual Reality Music Video"
 };
