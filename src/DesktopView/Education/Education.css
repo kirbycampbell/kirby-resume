@@ -1,0 +1,43 @@
+.outer-education {
+  margin: auto;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.inner-education {
+  display: flex;
+  float: left;
+  width: 28%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-right-edu {
+  display: flex;
+  float: right;
+  width: 70%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-item {
+  border: 2px solid grey;
+  border-top: none;
+  border-radius: 5px;
+  display: flex;
+  height: 100px;
+  margin: auto;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.edu-item:hover {
+  background: rgba(116, 74, 196, 0.108);
+}

@@ -1,5 +1,8 @@
 import React from "react";
 import "./DesktopView.css";
+import SkillList from "./Skills/SkillList";
+import ProjectContainer from "./Projects/ProjectContainer";
+import Education from "./Education/Education";
 
 const DesktopView = () => {
   return (
@@ -45,27 +48,16 @@ const DesktopView = () => {
         <div className="right-block">
           <div className="right-grid">
             <div className="right-brdr">
-              <h2>Summary of Skills</h2>
-              <ul>
-                <h5>FullStack Web Development</h5>
-                <li>
-                  <p>
-                    Built cutting edge Web Applications using React Hooks,
-                    Javascript ES6, GraphQL Databases.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Deployed Several Projects onto AWS and Heroku along with
-                    custom Backends hosted with Rails, Graphql, and FireStore.
-                  </p>
-                </li>
-              </ul>
+              <SkillList />
             </div>
             <div className="divider" />
-            <div className="right-brdr">Row 2</div>
+            <div className="right-brdr">
+              <ProjectContainer />
+            </div>
             <div className="divider" />
-            <div className="right-brdr">Row 3</div>
+            <div className="right-brdr">
+              <Education />
+            </div>
             <div className="divider" />
           </div>
         </div>

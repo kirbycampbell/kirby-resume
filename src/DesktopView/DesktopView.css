@@ -8,7 +8,7 @@
   body {
     border: 2px solid rgba(46, 46, 46, 0.349);
     margin: auto;
-    width: 98%;
+    width: 100%;
     border-radius: 10px;
     height: 1260px;
   }
@@ -28,25 +28,28 @@
   .job-bnr {
     font-family: "Lato", sans-serif;
     text-align: center;
-    color: rgb(255, 250, 250);
+    display: flex;
     font-size: 20px;
     margin: auto;
-    border-radius: 10px;
-    width: 97%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 100%;
     height: 70px;
     background-image: linear-gradient(
       to right,
-      rgba(47, 101, 163, 0.88),
-      rgb(61, 60, 134, 0.88),
-      rgb(173, 72, 94, 0.88)
+      rgba(47, 101, 163, 0.38),
+      rgb(61, 60, 134, 0.38),
+      rgb(173, 72, 94, 0.38)
     );
+    margin-bottom: 20px;
   }
 
   .main-container {
     text-align: center;
     display: grid;
     height: 90%;
-    grid-template-columns: 35% 60%;
+    grid-template-columns: 35% 65%;
   }
   .left-sidebar {
     grid-template-rows: 14% 0.5% 24% 0.5% 29% 0.5% 9% 0.5% 19% 0.5%;
@@ -93,23 +96,14 @@
   }
 
   .right-block {
-    display: grid;
-    margin-left: 5%;
-    width: 98%;
-    right: 5%;
+    float: right;
+    right: 0;
     height: 80%;
-    /* background-color: #fb6161; */
   }
 
   .right-grid {
-    grid-template-rows: 29.5% 0.5% 40% 0.5% 25% 0.5%;
-    display: grid;
-    grid-gap: 0.5%;
-    height: 100%;
-  }
-
-  .right-brdr {
-    border: 1px solid rgba(0, 0, 0, 0.13);
-    border-radius: 10px;
+    float: right;
+    width: 95%;
+    margin-right: 12px;
   }
 }

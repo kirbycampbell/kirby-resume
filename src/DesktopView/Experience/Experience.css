@@ -1,0 +1,47 @@
+.experience-outer {
+  margin-bottom: 20px;
+}
+
+.outer-exp {
+  margin: auto;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.inner-exp {
+  display: flex;
+  float: left;
+  width: 28%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-right-exp {
+  display: flex;
+  float: right;
+  width: 70%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-item {
+  border: 2px solid grey;
+  border-top: none;
+  border-radius: 5px;
+  display: flex;
+
+  margin: auto;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.exp-item:hover {
+  background: rgba(116, 74, 196, 0.108);
+}
