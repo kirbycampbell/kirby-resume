@@ -1,8 +1,8 @@
 import React from "react";
-import "./Personality.css";
+import "./PersonalityD.css";
 import { personality } from "../../Kirby_Info/SkillsData.js";
 
-const Personality = () => {
+const PersonalityD = () => {
   return (
     <div className="outer-personality">
       <div className="personality-item">
@@ -21,4 +21,4 @@ const Personality = () => {
   );
 };
 
-export default Personality;
+export default PersonalityD;

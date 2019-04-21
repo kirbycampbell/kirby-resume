@@ -1,11 +1,11 @@
 import React from "react";
-import "./Programs.css";
+import "./ProgramsD.css";
 import { programs } from "../../Kirby_Info/SkillsData";
 
-const Programs = () => {
+const ProgramsD = () => {
   return (
     <div>
-      <div className="program-container">
+      <div className="program-containerD">
         <div className="outer-program">
           <div className="prog-item">{programs[0]}</div>
         </div>
@@ -13,7 +13,7 @@ const Programs = () => {
           <div className="prog-item">{programs[1]}</div>
         </div>
       </div>
-      <div className="program-container">
+      <div className="program-containerD">
         <div className="outer-program">
           <div className="prog-item">{programs[2]}</div>
         </div>
@@ -21,7 +21,7 @@ const Programs = () => {
           <div className="prog-item">{programs[3]}</div>
         </div>
       </div>
-      <div className="program-container">
+      <div className="program-containerD">
         <div className="outer-program">
           <div className="prog-item">{programs[4]}</div>
         </div>
@@ -29,7 +29,7 @@ const Programs = () => {
           <div className="prog-item">{programs[5]}</div>
         </div>
       </div>
-      <div className="program-container">
+      <div className="program-containerD">
         <div className="outer-program">
           <div className="prog-item">{programs[6]}</div>
         </div>
@@ -41,4 +41,4 @@ const Programs = () => {
   );
 };
 
-export default Programs;
+export default ProgramsD;

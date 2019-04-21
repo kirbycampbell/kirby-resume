@@ -1,12 +1,12 @@
 import React from "react";
-import "./ProjectContainer.css";
 import { projects } from "../../Kirby_Info/SkillsData";
+import "./ProjectContainerD.css";
 
-const ProjectContainer = () => {
+const ProjectContainerD = () => {
   return (
     <div>
       {" "}
-      <div className="project-container">
+      <div className="project-containerD">
         <div className="Row1">
           <div className="project-row-left">
             {projects.portfolio.name1}
@@ -47,4 +47,4 @@ const ProjectContainer = () => {
   );
 };
 
-export default ProjectContainer;
+export default ProjectContainerD;

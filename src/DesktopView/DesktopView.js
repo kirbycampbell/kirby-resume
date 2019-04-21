@@ -1,8 +1,11 @@
 import React from "react";
 import "./DesktopView.css";
 import SkillList from "./Skills/SkillList";
-import ProjectContainer from "./Projects/ProjectContainer";
+import ProjectContainerD from "./Projects/ProjectContainerD";
 import Education from "./Education/Education";
+import ExperienceD from "./Experience/Experience";
+import PersonalityD from "./Personality/PersonalityD";
+import ProgramsD from "./Programs/ProgramsD";
 
 const DesktopView = () => {
   return (
@@ -14,6 +17,7 @@ const DesktopView = () => {
       <div className="job-bnr">
         <h2>FullStack Web Developer</h2>
       </div>
+
       <div className="main-container">
         {" "}
         <div className="left-sidebar">
@@ -36,17 +40,34 @@ const DesktopView = () => {
             <i className="far fa-id-badge" />
             <h4>www.jkirbycampbell.com</h4>
           </div>
+
+          <div className="spacer" />
+          {/*~~~~~~~~~~~ PROJECTS SECTION ~~~~~~~~~~~~*/}
           <div className="divider" />
-          {/*~~~~~~~~~~~ ADDITIONAL SKILLS SECTION ~~~~~~~~~~~~*/}
-          <div className="left-brdr">Row 3</div>
+          <div className="titles">Projects</div>
           <div className="divider" />
-          <div className="left-brdr">Row 4</div>
+          <ProjectContainerD />
+          <div className="spacer" />
+          {/*~~~~~~~~~~~ EDUCATION SECTION ~~~~~~~~~~~~*/}
           <div className="divider" />
-          <div className="left-brdr">Row 5</div>
+          <div className="titles">Programs</div>
           <div className="divider" />
+          <ProgramsD />
+          <div className="spacer" />
+
+          {/*~~~~~~~~~~~ PERSONALITY SECTION ~~~~~~~~~~~~*/}
+          <div className="divider" />
+          <div className="titles">Personality</div>
+          <div className="divider" />
+          <PersonalityD />
         </div>
+        {/*~~~~~~::::::::::::::::::::~~~~~ RIGHT SIDE ~~~~~:::::::::::::::::::::::::~~~~~~~*/}
         <div className="right-block">
+          <div className="spacer" />
+          <div className="spacer" />
+
           <div className="right-grid">
+            {/*~~~~~~~~~~~ SKILLS SECTION ~~~~~~~~~~~~*/}
             <div className="divider" />
             <div className="titles">Skills</div>
             <div className="divider" />
@@ -56,11 +77,15 @@ const DesktopView = () => {
               </div>
             </div>
             <div className="spacer" />
+            {/*~~~~~~~~~~~ PROJECTS SECTION ~~~~~~~~~~~~*/}
             <div className="divider" />
-            <div className="titles">Projects</div>
+            <div className="titles">Experience</div>
             <div className="divider" />
-            <ProjectContainer />
             <div className="spacer" />
+
+            <ExperienceD />
+            <div className="spacer" />
+            {/*~~~~~~~~~~~ EDUCATION SECTION ~~~~~~~~~~~~*/}
             <div className="divider" />
             <div className="titles">Education</div>
             <div className="divider" />

@@ -1,11 +1,10 @@
-.experience-outer {
+.experience-outerD {
   margin-bottom: 20px;
 }
 
 .outer-exp {
   margin: auto;
   font-weight: bold;
-  font-size: 16px;
 }
 
 .inner-exp {
@@ -20,26 +19,30 @@
 }
 
 .inner-right-exp {
-  display: flex;
+  display: grid;
   float: right;
-  width: 70%;
-  height: 50%;
+  width: 60%;
   text-align: center;
   margin: auto;
   align-items: center;
   justify-content: center;
 }
+.smaller-text {
+  font-size: 12px;
+  font-weight: normal;
+}
 
 .exp-item {
-  border: 2px solid grey;
-  border-top: none;
-  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.226);
+
+  border-radius: 8px;
   display: flex;
 
   margin: auto;
-  padding: 6px;
+  margin-bottom: 3px;
+  padding: 4px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .exp-item:hover {
