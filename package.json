@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.3",
+    "core-js": "^3.0.1",
     "node-emoji": "^1.10.0",
+    "raf": "^3.4.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8",
