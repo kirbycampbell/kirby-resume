@@ -5,7 +5,7 @@ import DesktopView from "./DesktopView/DesktopView";
 
 const App = () => {
   const phoneScreen = useMediaQuery("(max-width:900px)");
-  const DesktopScreen = useMediaQuery("(min-width:900px");
+  const DesktopScreen = useMediaQuery("(min-width:900px)");
 
   if (phoneScreen) {
     return <PhoneView />;
