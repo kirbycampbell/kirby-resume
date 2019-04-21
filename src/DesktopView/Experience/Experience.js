@@ -6,17 +6,6 @@ const ExperienceD = () => {
   return (
     <div className="experience-outerD">
       <div className="exp-item">
-        <div className="inner-exp">{experience.producerJob.years}</div>
-        <div className="inner-right-exp">
-          {experience.producerJob.name}
-          <div className="smaller-text">
-            {experience.producerJob.desc}
-            <br />
-            {experience.producerJob.work}
-          </div>
-        </div>
-      </div>
-      <div className="exp-item">
         <div className="inner-exp">{experience.stockJob.years}</div>
         <div className="inner-right-exp">
           {experience.stockJob.name}
@@ -35,6 +24,17 @@ const ExperienceD = () => {
             {experience.miningJob.desc}
             <br />
             {experience.miningJob.work}
+          </div>
+        </div>
+      </div>
+      <div className="exp-item">
+        <div className="inner-exp">{experience.producerJob.years}</div>
+        <div className="inner-right-exp">
+          {experience.producerJob.name}
+          <div className="smaller-text">
+            {experience.producerJob.desc}
+            <br />
+            {experience.producerJob.work}
           </div>
         </div>
       </div>
