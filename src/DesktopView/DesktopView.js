@@ -47,18 +47,24 @@ const DesktopView = () => {
         </div>
         <div className="right-block">
           <div className="right-grid">
-            <div className="right-brdr">
-              <SkillList />
-            </div>
             <div className="divider" />
-            <div className="right-brdr">
-              <ProjectContainer />
-            </div>
+            <div className="titles">Skills</div>
             <div className="divider" />
-            <div className="right-brdr">
-              <Education />
+            <div className="skill-container">
+              <div className="phone-skills">
+                <SkillList />
+              </div>
             </div>
+            <div className="spacer" />
             <div className="divider" />
+            <div className="titles">Projects</div>
+            <div className="divider" />
+            <ProjectContainer />
+            <div className="spacer" />
+            <div className="divider" />
+            <div className="titles">Education</div>
+            <div className="divider" />
+            <Education />
           </div>
         </div>
       </div>
