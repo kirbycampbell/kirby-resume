@@ -11,7 +11,7 @@
   width: 49%;
   margin: auto;
 }
-.project-row-left {
+.project-row-desk {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -23,7 +23,7 @@
   padding: 2px;
 }
 
-.project-row-left:hover {
+.project-row-desk:hover {
   background: rgba(92, 123, 165, 0.151);
 
   box-shadow: 2px 2px 3px rgba(47, 30, 141, 0.404);
