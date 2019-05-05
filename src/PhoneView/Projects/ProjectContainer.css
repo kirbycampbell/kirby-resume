@@ -32,6 +32,21 @@
   user-select: none;
 }
 
+.project-row-phone.hovered {
+  margin: auto;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid rgb(165, 45, 45);
+  cursor: pointer;
+  margin-top: 4px;
+  padding: 2px;
+  border-radius: 5px;
+  user-select: none;
+}
+
 .project-row-focus {
   margin: auto;
   height: 60px;
