@@ -18,6 +18,7 @@
 }
 
 .project-row-phone {
+  display: flex;
   margin: auto;
   height: 60px;
   justify-content: center;
@@ -32,35 +33,22 @@
   user-select: none;
 }
 
-.project-row-phone.hovered {
-  margin: auto;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 14px;
-  border: 1px solid rgb(165, 45, 45);
-  cursor: pointer;
-  margin-top: 4px;
-  padding: 2px;
-  border-radius: 5px;
-  user-select: none;
+.showProject {
+  transition: opacity 0.8s;
+  opacity: 1;
 }
-
-.project-row-focus {
+.showDetails {
   margin: auto;
   height: 60px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 14px;
-  border: 7px solid rgb(209, 22, 22);
+  position: absolute;
   background: blue;
-  cursor: pointer;
-  margin-top: 4px;
-  padding: 2px;
-  border-radius: 5px;
-  user-select: none;
+  transition: opacity 1.8s;
+  opacity: 1;
+}
+.hidden {
+  position: absolute;
+  transition: opacity 0.8s;
+  opacity: 0;
 }
 
 .project-row-phone:hover {

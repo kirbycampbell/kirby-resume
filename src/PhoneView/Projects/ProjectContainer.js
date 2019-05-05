@@ -23,27 +23,40 @@ const ProjectContainer = () => {
       <div className="project-container">
         <div className="RowPhone">
           <div
-            className={
-              "project-row-phone " +
-              `${style.proj === projItem.name1 ? "hovered" : null}`
-            }
+            className="project-row-phone"
             onMouseEnter={() => mouseEnter(projItem.name1)}
             onMouseLeave={() => mouseLeave(projItem.name1)}
           >
-            {style.proj === projItem.name1 && style.in && (
-              <div>
-                <br /> Framework: {projItem.framework1}
-                <br /> Backend: {projItem.backend1}
-                <br /> Hosted On: {projItem.hosted1}{" "}
-              </div>
-            )}
-            {projItem.name1}
+            <div
+              className={`${
+                style.proj === projItem.name1 && style.in
+                  ? "hidden"
+                  : "showProject"
+              }`}
+            >
+              {" "}
+              {projItem.name1}
+            </div>
+
+            <div
+              className={`${
+                style.proj === projItem.name1 && style.in
+                  ? "showDetails"
+                  : "hidden"
+              }`}
+            >
+              <br /> Framework: {projItem.framework1}
+              <br /> Backend: {projItem.backend1}
+              <br /> Hosted On: {projItem.hosted1}{" "}
+            </div>
           </div>
 
           <div
             className={
               "project-row-phone " +
-              `${style.proj === projItem.name4 ? "hovered" : null}`
+              `${
+                style.proj === projItem.name4 && style.in ? "hovered" : "normal"
+              }`
             }
             onMouseEnter={() => mouseEnter(projItem.name4)}
             onMouseLeave={() => mouseLeave(projItem.name4)}
