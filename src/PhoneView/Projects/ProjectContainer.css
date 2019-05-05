@@ -16,9 +16,13 @@
   width: 49%;
   margin: auto;
 }
+span {
+  display: block;
+}
 
 .project-row-phone {
   display: flex;
+  font-weight: bold;
   margin: auto;
   height: 60px;
   justify-content: center;
@@ -31,27 +35,44 @@
   padding: 2px;
   border-radius: 5px;
   user-select: none;
-}
-
-.showProject {
-  transition: opacity 0.8s;
-  opacity: 1;
-}
-.showDetails {
-  margin: auto;
-  height: 60px;
-  position: absolute;
-  background: blue;
-  transition: opacity 1.8s;
-  opacity: 1;
-}
-.hidden {
-  position: absolute;
-  transition: opacity 0.8s;
-  opacity: 0;
+  transition: background 1.4s ease;
 }
 
 .project-row-phone:hover {
-  background: rgba(92, 123, 165, 0.151);
+  background: rgba(14, 45, 88, 0.671);
+  transition: background 1.4s ease;
   box-shadow: 2px 2px 3px rgba(47, 30, 141, 0.404);
+}
+
+.showProject {
+  position: absolute;
+  transition: opacity 1.4s;
+  opacity: 1;
+}
+
+.hiddenProject {
+  position: absolute;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.showDetails {
+  display: block;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  transition: opacity 1.4s;
+  transition: color 42;
+  opacity: 1;
+}
+
+.hiddenDetails {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  transition: opacity 2.5s ease;
+  opacity: 0;
 }
