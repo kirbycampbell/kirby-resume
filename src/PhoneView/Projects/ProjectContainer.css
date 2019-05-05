@@ -19,7 +19,7 @@
 
 .project-row-phone {
   margin: auto;
-  height: 40%;
+  height: 60px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -29,6 +29,23 @@
   margin-top: 4px;
   padding: 2px;
   border-radius: 5px;
+  user-select: none;
+}
+
+.project-row-focus {
+  margin: auto;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  border: 7px solid rgb(209, 22, 22);
+  background: blue;
+  cursor: pointer;
+  margin-top: 4px;
+  padding: 2px;
+  border-radius: 5px;
+  user-select: none;
 }
 
 .project-row-phone:hover {
