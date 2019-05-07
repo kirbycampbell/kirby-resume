@@ -12,15 +12,29 @@
   margin: auto;
 }
 .project-row-desk {
-  display: flex;
+  font-weight: bold;
   margin: auto;
+  height: 60px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 5px;
   font-size: 14px;
+  border: 1px solid rgb(148, 129, 129);
   cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 0;
   padding: 2px;
+  border-radius: 5px;
+  user-select: none;
+  transition: background 1.4s ease;
+}
+.showDetails-desk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  margin-top: -10px;
 }
 
 .project-row-desk:hover {

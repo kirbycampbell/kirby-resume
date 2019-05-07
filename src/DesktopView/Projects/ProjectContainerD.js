@@ -10,36 +10,48 @@ const ProjectContainerD = () => {
         <div className="Row1">
           <div className="project-row-desk">
             {projects.portfolio.name1}
-            <br /> Framework: {projects.portfolio.framework1}
-            <br /> Backend: {projects.portfolio.backend1}
-            <br /> Hosted On: {projects.portfolio.hosted1}
+            <div className="showDetails-desk">
+              <br /> Framework: {projects.portfolio.framework1}
+              <br /> Backend: {projects.portfolio.backend1}{" "}
+              {projects.portfolio.hosted1}
+            </div>
           </div>
 
           <div className="project-row-desk">
             {projects.portfolio.name4}
-            <br /> Framework: {projects.portfolio.framework4}
+            <div className="showDetails-desk">
+              <br /> Framework: {projects.portfolio.framework4}
+            </div>
           </div>
           <div className="project-row-desk">
             {projects.portfolio.name5}
-            <br /> Framework: {projects.portfolio.framework5}
+            <div className="showDetails-desk">
+              <br /> Framework: {projects.portfolio.framework5}
+            </div>
           </div>
         </div>
         <div className="Row1">
           <div className="project-row-desk">
             {projects.portfolio.name2}
-            <br /> Framework: {projects.portfolio.framework2}
-            <br /> Backend: {projects.portfolio.backend2}
-            <br /> Hosted On: {projects.portfolio.hosted2}
+            <div className="showDetails-desk">
+              <br /> Framework: {projects.portfolio.framework2}
+              <br /> Backend: {projects.portfolio.backend2}{" "}
+              {projects.portfolio.hosted2}
+            </div>
           </div>
           <div className="project-row-desk">
             {projects.portfolio.name3}
-            <br /> Framework: {projects.portfolio.framework3}
-            <br /> Backend: {projects.portfolio.backend3}
-            <br /> Hosted On: {projects.portfolio.hosted3}
+            <div className="showDetails-desk">
+              <br /> Framework: {projects.portfolio.framework3}
+              <br /> Backend: {projects.portfolio.backend3}{" "}
+              {projects.portfolio.hosted3}
+            </div>
           </div>
           <div className="project-row-desk">
             Extras
-            <br /> From Flatiron Bootcamp
+            <div className="showDetails-desk">
+              <br /> From Flatiron Bootcamp
+            </div>
           </div>
         </div>
       </div>
