@@ -74,6 +74,20 @@
   h4 {
     margin: auto;
   }
+  .cont-item {
+    display: flex;
+    justify-content: center;
+    color: rgb(4, 4, 168);
+    font-weight: bold;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .cont-item:hover {
+    color: rgba(49, 49, 143, 0.705);
+    cursor: pointer;
+  }
 
   .spacer {
     height: 14px;

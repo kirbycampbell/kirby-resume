@@ -32,13 +32,22 @@ const DesktopView = () => {
           {/*~~~~~~~~~~~ CONTACT INFO SECTION ~~~~~~~~~~~~*/}
           <div className="left-brdr contact">
             <i className="fas fa-mobile-alt" />
-            <h4>+ 1 337-303-8848</h4>
+            <a className="cont-item" href="tel:13373038848" data-rel="external">
+              1(337)-303-8848
+            </a>
             <i className="far fa-envelope" />
-            <h4 style={{ fontSize: "16px" }}>jKirbyCampbell@gmail.com</h4>
+
+            <a
+              className="cont-item"
+              href="mailto:jKirbyCampbell@gmail.com"
+              data-rel="external"
+            >
+              jKirbyCampbell@gmail.com
+            </a>
             <i className="fas fa-map-pin" />
-            <h4>Portland, OR</h4>
+            <h4 className="cont-item">Portland, OR</h4>
             <i className="far fa-id-badge" />
-            <h4>www.jkirbycampbell.com</h4>
+            <h4 className="cont-item">www.jkirbycampbell.com</h4>
           </div>
 
           <div className="spacer" />
