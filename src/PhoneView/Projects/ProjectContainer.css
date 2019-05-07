@@ -53,7 +53,7 @@ span {
 .hiddenProject {
   position: absolute;
   transition: opacity 1s;
-  opacity: 0;
+  opacity: 0.1;
 }
 
 .showDetails {
@@ -63,6 +63,7 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 12px;
   position: absolute;
   transition: opacity 1.4s;
   transition: color 42;
@@ -72,6 +73,7 @@ span {
 .hiddenDetails {
   position: absolute;
   font-weight: bold;
+  font-size: 10px;
   color: white;
   transition: opacity 2.5s ease;
   opacity: 0;
