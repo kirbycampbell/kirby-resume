@@ -45,7 +45,7 @@ const DesktopView = () => {
             <i className="far fa-id-badge" />
             <a
               target="_blank"
-              href="www.jkirbycampbell.com"
+              href="http://www.jkirbycampbell.com"
               data-rel="external"
               className="cont-item"
             >
