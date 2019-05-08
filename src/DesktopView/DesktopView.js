@@ -37,17 +37,20 @@ const DesktopView = () => {
             </a>
             <i className="far fa-envelope" />
 
-            <a
-              className="cont-item"
-              href="mailto:jKirbyCampbell@gmail.com"
-              data-rel="external"
-            >
-              jKirbyCampbell@gmail.com
+            <a className="cont-item" href="mailto:jKirbyCampbell@gmail.com">
+              jkirbycampbell@gmail.com
             </a>
             <i className="fas fa-map-pin" />
             <h4 className="cont-item">Portland, OR</h4>
             <i className="far fa-id-badge" />
-            <h4 className="cont-item">www.jkirbycampbell.com</h4>
+            <a
+              target="_blank"
+              href="www.jkirbycampbell.com"
+              data-rel="external"
+              className="cont-item"
+            >
+              www.jkirbycampbell.com
+            </a>
           </div>
 
           <div className="spacer" />
