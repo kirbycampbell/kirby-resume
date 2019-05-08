@@ -27,12 +27,12 @@
 }
 
 .edu-item {
-  border: 2px solid grey;
-  border-top: none;
-  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.329);
+  border-radius: 10px;
   display: flex;
   height: 100px;
   margin: auto;
+  margin-top: 5px;
   padding: 4px;
   font-weight: bold;
   font-size: 16px;

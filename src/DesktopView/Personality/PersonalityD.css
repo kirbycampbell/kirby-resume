@@ -26,13 +26,17 @@
 }
 
 .personality-item {
-  border: 2px solid grey;
-  border-top: none;
-  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.342);
+  border-radius: 10px;
   display: flex;
-  height: 70px;
+  height: 60px;
   margin: auto;
+  margin-top: 5px;
   padding: 4px;
   font-weight: bold;
   font-size: 14px;
+}
+
+.personality-item:hover {
+  background: rgba(116, 74, 196, 0.108);
 }

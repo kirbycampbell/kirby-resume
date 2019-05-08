@@ -26,7 +26,9 @@
   padding: 2px;
   border-radius: 5px;
   user-select: none;
-  transition: background 1.4s ease;
+}
+.project-row-desk:hover {
+  background: rgba(116, 74, 196, 0.108);
 }
 .showDetails-desk {
   display: flex;

@@ -42,7 +42,7 @@ const PhoneView = () => {
     setExperienceShow(!experienceShow);
   };
   return (
-    <div className="App">
+    <div className="AppPhone">
       <div className="above-footer">
         <NavBar />
         <div className="job-bnr">
@@ -66,6 +66,14 @@ const PhoneView = () => {
         <div className="divider" />
         {projectShow && <ProjectContainer />}
         {!projectShow && <div className="skill-container" />}
+        {/*:::::::::: EXPERIENCE SECTION :::::::::: */}
+        <div className="divider" />
+        <div className="titles" onClick={handleExperienceShow}>
+          Experience
+        </div>
+        <div className="divider" />
+        {experienceShow && <Experience />}
+        {!experienceShow && <div className="skill-container" />}
         {/*:::::::::: EDUCATION SECTION :::::::::: */}
         <div className="divider" />
         <div className="titles" onClick={handleEducationShow}>
@@ -85,19 +93,11 @@ const PhoneView = () => {
         {/*:::::::::: PROGRAMS SECTION :::::::::: */}
         <div className="divider" />
         <div className="titles" onClick={handleProgramShow}>
-          Programs & Apps
+          Program Skills
         </div>
         <div className="divider" />
         {programShow && <Programs />}
         {!programShow && <div className="skill-container" />}
-        {/*:::::::::: EXPERIENCE SECTION :::::::::: */}
-        <div className="divider" />
-        <div className="titles" onClick={handleExperienceShow}>
-          Experience
-        </div>
-        <div className="divider" />
-        {experienceShow && <Experience />}
-        {!experienceShow && <div className="skill-container" />}
       </div>
       <Footer />
     </div>

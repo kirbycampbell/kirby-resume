@@ -68,7 +68,8 @@ const DesktopView = () => {
           <div className="titles">Projects</div>
           <div className="divider" />
           <ProjectContainerD />
-          <div className="spacer" />
+          <div className="spacer2" />
+          <div className="spacer2" />
           {/*~~~~~~~~~~~ EDUCATION SECTION ~~~~~~~~~~~~*/}
           <div className="divider" />
           <div className="titles">Programs</div>
