@@ -43,7 +43,11 @@ const Contacts = () => {
         if (contactItem === contact.number && open) {
           setOpen(false);
         } else {
-          setContactItem(contact.number);
+          setContactItem(
+            <a className="cont-item" href="tel:13373038848" data-rel="external">
+              1(337)-303-8848
+            </a>
+          );
           setOpen(true);
         }
         break;

@@ -45,6 +45,9 @@ const PhoneView = () => {
     <div className="App">
       <div className="above-footer">
         <NavBar />
+        <div className="job-bnr">
+          <h2 className="dev-title">FullStack Web Developer</h2>
+        </div>
         <Contacts />
         {/*::::::::: SKILL SECTION ::::::::: */}
         <div className="divider" />

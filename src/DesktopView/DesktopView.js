@@ -15,7 +15,7 @@ const DesktopView = () => {
         <h1>Kirby Campbell</h1>
       </div>
       <div className="job-bnr">
-        <h2>FullStack Web Developer</h2>
+        <h2 className="dev-title">FullStack Web Developer</h2>
       </div>
 
       <div className="main-container">
@@ -30,30 +30,39 @@ const DesktopView = () => {
           </div>
           <div className="divider" />
           {/*~~~~~~~~~~~ CONTACT INFO SECTION ~~~~~~~~~~~~*/}
+          <div className="spacer2" />
           <div className="left-brdr contact">
             <i className="fas fa-mobile-alt" />
-            <a className="cont-item" href="tel:13373038848" data-rel="external">
+            <a
+              className="cont-item"
+              href="tel:13373038848"
+              data-rel="external"
+              rel="noopener noreferrer"
+            >
               1(337)-303-8848
             </a>
             <i className="far fa-envelope" />
 
-            <a className="cont-item" href="mailto:jKirbyCampbell@gmail.com">
+            <a className="cont-item" href="mailto://jkirbycampbell@gmail.com">
               jkirbycampbell@gmail.com
             </a>
             <i className="fas fa-map-pin" />
-            <h4 className="cont-item">Portland, OR</h4>
+            <a href="maps" className="cont-item">
+              Portland, OR
+            </a>
             <i className="far fa-id-badge" />
             <a
               target="_blank"
               href="http://www.jkirbycampbell.com"
               data-rel="external"
               className="cont-item"
+              rel="noopener noreferrer"
             >
               www.jkirbycampbell.com
             </a>
           </div>
 
-          <div className="spacer" />
+          <div className="spacer2" />
           {/*~~~~~~~~~~~ PROJECTS SECTION ~~~~~~~~~~~~*/}
           <div className="divider" />
           <div className="titles">Projects</div>

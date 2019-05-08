@@ -77,20 +77,30 @@
   .cont-item {
     display: flex;
     justify-content: center;
-    color: rgb(4, 4, 168);
+    color: rgb(129, 85, 201);
+    background: rgba(233, 230, 230, 0.514);
     font-weight: bold;
     align-items: center;
     font-size: 16px;
     text-decoration: none;
+    border: 1px solid rgba(44, 44, 44, 0.159);
+    border-radius: 10px;
+    font-family: "Baloo Bhai", cursive;
+    font-weight: normal;
   }
 
   .cont-item:hover {
     color: rgba(49, 49, 143, 0.705);
     cursor: pointer;
+    background: rgba(184, 180, 180, 0.425);
   }
 
   .spacer {
     height: 14px;
+    width: 99%;
+  }
+  .spacer2 {
+    height: 7px;
     width: 99%;
   }
 
@@ -110,9 +120,6 @@
     text-align: center;
   }
 
-  .skill-container:hover {
-    box-shadow: 3px 2px #2e1c499d;
-  }
   .phone-skills {
     width: 90%;
     margin: auto;
@@ -129,6 +136,10 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+  }
+  .dev-title {
+    font-family: lobster, cursive;
+    color: rgba(36, 34, 34, 0.774);
   }
 
   .divider {

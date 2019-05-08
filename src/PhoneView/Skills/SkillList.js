@@ -12,44 +12,44 @@ const SkillList = () => {
         Skilled || {rank.five} = Expert
       </div>
       <div className="skillRow">
-        <div className="skillItem">{codeSkills[0]}</div> {/* React */}
-        <div className="skillItem">{codeSkills[4]}</div> {/* GitHub */}
-        <div className="skillItem">{codeSkills[6]}</div> {/* Rails */}
-        <div className="skillItem">{codeSkills[2]}</div> {/* GraphQL */}
-        <div className="skillItem">{codeSkills[8]}</div> {/* SQL */}
-        <div className="skillItem">{codeSkills[10]}</div> {/* AppSync */}
-        <div className="skillItem">{codeSkills[12]}</div> {/* Heroku */}
-        <div className="skillItem">{codeSkills[14]}</div> {/* jQuery */}
+        <div className="skillItemPhone">{codeSkills[0]}</div> {/* React */}
+        <div className="skillItemPhone">{codeSkills[4]}</div> {/* GitHub */}
+        <div className="skillItemPhone">{codeSkills[6]}</div> {/* Rails */}
+        <div className="skillItemPhone">{codeSkills[2]}</div> {/* GraphQL */}
+        <div className="skillItemPhone">{codeSkills[8]}</div> {/* SQL */}
+        <div className="skillItemPhone">{codeSkills[10]}</div> {/* AppSync */}
+        <div className="skillItemPhone">{codeSkills[12]}</div> {/* Heroku */}
+        <div className="skillItemPhone">{codeSkills[14]}</div> {/* jQuery */}
       </div>
       <div className="skillRow">
-        <div className="skillItem">{rank.five}</div> {/* React */}
-        <div className="skillItem">{rank.five}</div> {/* GitHub */}
-        <div className="skillItem">{rank.four}</div> {/* Rails */}
-        <div className="skillItem">{rank.three}</div> {/* GraphQL */}
-        <div className="skillItem">{rank.three}</div> {/* SQL */}
-        <div className="skillItem">{rank.three}</div> {/* AppSync */}
-        <div className="skillItem">{rank.three}</div> {/* Heroku */}
-        <div className="skillItem">{rank.three}</div> {/* jQuery */}
+        <div className="skillItemPhone">{rank.five}</div> {/* React */}
+        <div className="skillItemPhone">{rank.five}</div> {/* GitHub */}
+        <div className="skillItemPhone">{rank.four}</div> {/* Rails */}
+        <div className="skillItemPhone">{rank.three}</div> {/* GraphQL */}
+        <div className="skillItemPhone">{rank.three}</div> {/* SQL */}
+        <div className="skillItemPhone">{rank.three}</div> {/* AppSync */}
+        <div className="skillItemPhone">{rank.three}</div> {/* Heroku */}
+        <div className="skillItemPhone">{rank.three}</div> {/* jQuery */}
       </div>
       <div className="skillRow">
-        <div className="skillItem">{codeSkills[1]}</div> {/* JavaScript */}
-        <div className="skillItem">{codeSkills[3]}</div> {/* HTML/CSS */}
-        <div className="skillItem">{codeSkills[13]}</div> {/* Ruby */}
-        <div className="skillItem">{codeSkills[5]}</div> {/* Redux */}
-        <div className="skillItem">{codeSkills[9]}</div> {/* Amplify */}
-        <div className="skillItem">{codeSkills[11]}</div> {/* Firebase */}
-        <div className="skillItem">{codeSkills[15]}</div> {/* C++ */}
-        <div className="skillItem">{codeSkills[7]}</div> {/* Vue */}
+        <div className="skillItemPhone">{codeSkills[1]}</div> {/* JavaScript */}
+        <div className="skillItemPhone">{codeSkills[3]}</div> {/* HTML/CSS */}
+        <div className="skillItemPhone">{codeSkills[13]}</div> {/* Ruby */}
+        <div className="skillItemPhone">{codeSkills[5]}</div> {/* Redux */}
+        <div className="skillItemPhone">{codeSkills[9]}</div> {/* Amplify */}
+        <div className="skillItemPhone">{codeSkills[11]}</div> {/* Firebase */}
+        <div className="skillItemPhone">{codeSkills[15]}</div> {/* C++ */}
+        <div className="skillItemPhone">{codeSkills[7]}</div> {/* Vue */}
       </div>
       <div className="skillRow">
-        <div className="skillItem">{rank.five}</div> {/* JavaScript */}
-        <div className="skillItem">{rank.five}</div> {/* HTML/CSS */}
-        <div className="skillItem">{rank.four}</div> {/* Ruby */}
-        <div className="skillItem">{rank.four}</div> {/* Redux */}
-        <div className="skillItem">{rank.four}</div> {/* Amplify */}
-        <div className="skillItem">{rank.three}</div> {/* Firebase */}
-        <div className="skillItem">{rank.three}</div> {/* C++ */}
-        <div className="skillItem">{rank.two}</div> {/* Vue */}
+        <div className="skillItemPhone">{rank.five}</div> {/* JavaScript */}
+        <div className="skillItemPhone">{rank.five}</div> {/* HTML/CSS */}
+        <div className="skillItemPhone">{rank.four}</div> {/* Ruby */}
+        <div className="skillItemPhone">{rank.four}</div> {/* Redux */}
+        <div className="skillItemPhone">{rank.four}</div> {/* Amplify */}
+        <div className="skillItemPhone">{rank.three}</div> {/* Firebase */}
+        <div className="skillItemPhone">{rank.three}</div> {/* C++ */}
+        <div className="skillItemPhone">{rank.two}</div> {/* Vue */}
       </div>
     </div>
   );

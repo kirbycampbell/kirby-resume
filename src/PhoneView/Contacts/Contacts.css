@@ -18,9 +18,8 @@
 .email {
   text-decoration: none;
   padding: 5px;
-  background: rgb(12, 12, 124);
+  background: rgba(12, 12, 124, 0.288);
   text-emphasis: bold;
-  color: white;
   border: 2px solid rgb(99, 96, 96);
   border-radius: 10px;
 }
