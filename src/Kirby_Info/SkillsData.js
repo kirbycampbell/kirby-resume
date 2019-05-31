@@ -94,14 +94,14 @@ export const experience = {
   producerJob: {
     name: "Music Producer",
     years: "2011-Present",
-    desc: "Produced & Mixed ~ 45 songs",
-    work: "Large Project Management"
+    desc: "Produced & Mixed ~ 55+ songs",
+    work: "Large Project Management/Complex Routing & Synths"
   },
   musicianJob: {
-    name: "Touring Musician",
+    name: "Touring Musician - International",
     years: "2010-2016",
     desc: "Worked ~ 200 Days/Year",
-    work: "Drummer & Live Electronics"
+    work: "Drummer & Live Electronics/Computer Mgmt"
   },
   uberJob: {
     name: "Uber Driver",
