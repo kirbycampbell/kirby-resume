@@ -7,13 +7,14 @@ const App = () => {
   const phoneScreen = useMediaQuery("(max-width:900px)");
   const DesktopScreen = useMediaQuery("(min-width:900px)");
 
-  if (phoneScreen) {
-    return <PhoneView />;
-  } else if (DesktopScreen && !phoneScreen) {
-    return <DesktopView />;
-  } else {
-    return <div>Loading...</div>;
-  }
+  // if (DesktopScreen && !phoneScreen) {
+  //   return <DesktopView />;
+  // } else if (phoneScreen) {
+  //   return <PhoneView />;
+  // } else {
+  //   return <div>Loading...</div>;
+  // }
+  return <DesktopView />;
 };
 
 export default App;

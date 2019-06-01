@@ -35,11 +35,11 @@ const DesktopView = () => {
             <i className="fas fa-mobile-alt" />
             <a
               className="cont-item"
-              href="tel:13373038848"
+              href="tel:15039284143"
               data-rel="external"
               rel="noopener noreferrer"
             >
-              1(337)-303-8848
+              1(503)-928-4143
             </a>
             <i className="far fa-envelope" />
 
@@ -59,6 +59,16 @@ const DesktopView = () => {
               rel="noopener noreferrer"
             >
               www.jkirbycampbell.com
+            </a>
+            <i className="fab fa-github" />
+            <a
+              target="_blank"
+              href="https://github.com/kirbycampbell"
+              data-rel="external"
+              className="cont-item"
+              rel="noopener noreferrer"
+            >
+              Kirby's Github
             </a>
           </div>
 

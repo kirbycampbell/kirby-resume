@@ -57,7 +57,7 @@ export const education = {
     extra: "Part-Time student once I'm full-time employed."
   },
   Udacity: {
-    name: "Udacity VR NanoDegree",
+    name: "Udacity VR Course",
     date: "July 2016-Jan 2017",
     explain: "Focus: Virtual Reality with Unity & C++"
   }

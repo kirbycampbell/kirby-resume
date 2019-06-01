@@ -6,5 +6,5 @@ export const contact = {
   from: "Louisiana",
   website: "jkirbycampbell.com",
   email: "jkirbycampbell@gmail.com",
-  number: "337-303-8848"
+  number: "503-928-4143"
 };

@@ -40,3 +40,48 @@
 .personality-item:hover {
   background: rgba(116, 74, 196, 0.108);
 }
+
+@media print {
+  .outer-personality {
+    margin: auto;
+    font-weight: bold;
+  }
+
+  .inner-personality {
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-right-personality {
+    display: flex;
+    float: right;
+    width: 70%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personality-item {
+    border: 2px solid rgba(128, 128, 128, 0.342);
+    border-radius: 10px;
+    display: flex;
+    height: 40px;
+    margin: auto;
+    margin-top: 1px;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .personality-item:hover {
+    background: rgba(116, 74, 196, 0.108);
+  }
+}

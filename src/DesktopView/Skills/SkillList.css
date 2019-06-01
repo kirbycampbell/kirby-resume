@@ -23,3 +23,33 @@
   width: 100%;
   user-select: none;
 }
+
+@media print {
+  .skill-key {
+    font-size: 9px;
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .skill-key i {
+    font-size: 6px;
+  }
+
+  .skillRow {
+    float: left;
+    width: 25%;
+  }
+
+  .skillItem {
+    content: "";
+    display: table;
+    clear: both;
+    font-size: 12px;
+    margin: 2px;
+    border: 1px dotted rgba(0, 0, 0, 0.115);
+    border-radius: 3px;
+    width: 100%;
+    user-select: none;
+  }
+}

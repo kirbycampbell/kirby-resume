@@ -9,16 +9,24 @@ const Education = () => {
         <div className="inner-education">{education.coding.date}</div>
         <div className="inner-right-edu">
           {education.coding.name}
-          <br />
-          {education.coding.explain}
+
+          <div className="explain">{education.coding.explain}</div>
         </div>
       </div>
       <div className="edu-item">
         <div className="inner-education">{education.college.date}</div>
         <div className="inner-right-edu">
           {education.college.name}
-          <br />
-          {education.college.explain}
+
+          <div className="explain">{education.college.explain}</div>
+        </div>
+      </div>
+      <div className="edu-item">
+        <div className="inner-education">{education.Udacity.date}</div>
+        <div className="inner-right-edu">
+          {education.Udacity.name}
+
+          <div className="explain">{education.Udacity.explain}</div>
         </div>
       </div>
     </div>
