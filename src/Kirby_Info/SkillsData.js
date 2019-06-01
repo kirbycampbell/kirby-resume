@@ -6,16 +6,16 @@ export const codeSkills = [
   "HTML/CSS",
   "GitHub",
   "Redux",
-  "Rails",
+  "Rails/Ruby",
   "Vue",
   "SQL",
-  "Amplify",
-  "AppSync",
-  "FireBase",
+  "LINUX",
+  "React Native",
+  "AWS Amplify",
   "Heroku",
-  "Ruby",
+  "C++",
   "jQuery",
-  "C++"
+  "Typescript"
 ];
 
 export const programs = [
@@ -55,6 +55,11 @@ export const education = {
     date: "April '18 - Present",
     explain: "Focus: Computer Science Major (4.0 GPA)",
     extra: "Part-Time student once I'm full-time employed."
+  },
+  Udacity: {
+    name: "Udacity VR NanoDegree",
+    date: "July 2016-Jan 2017",
+    explain: "Focus: Virtual Reality with Unity & C++"
   }
 };
 
@@ -86,7 +91,7 @@ export const projects = {
     hosted5: "Not yet"
   },
 
-  music: "Produced ~ 30 songs over last 5 years.",
+  music: "Produced ~ 55 songs over last 5 years.",
   video: "Editor & Cinematographer of Virtual Reality Music Video"
 };
 
