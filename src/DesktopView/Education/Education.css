@@ -49,3 +49,57 @@
 .edu-item:hover {
   background: rgba(116, 74, 196, 0.108);
 }
+
+@media print {
+  .outer-education {
+    margin: auto;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .inner-education {
+    display: flex;
+    float: left;
+    width: 28%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-right-edu {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 70%;
+    font-size: 14px;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .edu-item {
+    border: 2px solid rgba(128, 128, 128, 0.329);
+    border-radius: 10px;
+    display: flex;
+    height: 40px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .explain {
+    font-weight: normal;
+    font-size: 11px;
+    font-style: italic;
+  }
+
+  .edu-item:hover {
+    background: rgba(116, 74, 196, 0.108);
+  }
+}

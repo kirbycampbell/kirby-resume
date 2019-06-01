@@ -176,18 +176,18 @@
     width: 100%;
     max-width: 900px;
     height: 1000px;
-    margin: auto;
+    margin: 0;
   }
 
   body {
     /* border: 2px solid rgba(46, 46, 46, 0.349); */
     display: flex;
-    margin: auto;
+    margin: 0;
     justify-content: center;
     align-items: center;
     width: 99%;
     border-radius: 10px;
-    height: 800px;
+    height: 900px;
   }
 
   .name-bnr {
@@ -222,7 +222,7 @@
   }
   .prof-pic {
     margin-top: 2px;
-    height: 120px;
+    height: 110px;
     border-radius: 100px;
   }
 
