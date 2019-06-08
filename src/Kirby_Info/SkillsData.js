@@ -69,32 +69,48 @@ export const projects = {
     framework1: "React",
     backend1: "FireStore",
     hosted1: "Heroku",
+    website: "https://blog-creator.jkirbycampbell.com/",
 
     name2: "WhatsApp Clone",
     framework2: "React Hooks",
     backend2: "GraphQl & Amplify",
     hosted2: "AWS",
+    website2: "https://www.chat.jkirbycampbell.com/",
 
     name3: "Beverage Manager",
     framework3: "React & Redux",
-    backend3: "Ruby on Rails",
-    hosted3: "Heroku & AWS",
+    backend3: "Ruby on Rails API",
+    hosted3: "& AWS",
+    website3: "https://the-one-who-works.herokuapp.com/",
 
     name4: "News Journal",
-    framework4: "Vue",
+    framework4: "Vue/CSS",
     backend4: "None",
-    hosted4: "Not Yet",
+    hosted4: "AWS",
+    website4: "https://journal-clone.jkirbycampbell.com/",
 
     name5: "Meditation Timer",
     framework5: "React Hooks",
     backend5: "None yet",
-    hosted5: "Not yet"
+    hosted5: "Not yet",
+    website5: "https://meditation-app.jkirbycampbell.com/",
+
+    name6: "Store Front",
+    framework6: "React Hooks",
+    backend6: "Local",
+    hosted6: "AWS",
+    website6: "https://www.vintage-store.jkirbycampbell.com/",
+
+    name7: "Tic Hack Toe",
+    framework7: "React/ Javascript",
+    backend7: "Local",
+    hosted7: "AWS",
+    websit7: "https://www.vintage-store.jkirbycampbell.com/"
   },
 
-  music: "Produced ~ 55 songs over last 5 years.",
+  music: "Produced ~ 30 songs over last 5 years.",
   video: "Editor & Cinematographer of Virtual Reality Music Video"
 };
-
 export const experience = {
   producerJob: {
     name: "Music Producer",

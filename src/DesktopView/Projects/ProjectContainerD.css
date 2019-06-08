@@ -14,8 +14,10 @@
 .project-row-desk {
   font-weight: bold;
   margin: auto;
-  height: 60px;
+  height: 100px;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   font-size: 14px;
@@ -35,8 +37,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 10px;
-  margin-top: -10px;
+  font-size: 11px;
+  height: 100%;
+  font-weight: normal;
 }
 
 .project-row-desk:hover {
@@ -45,52 +48,8 @@
   box-shadow: 2px 2px 3px rgba(47, 30, 141, 0.404);
 }
 
-@media print {
-  .project-containerD {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-    width: 100%;
-    margin: auto;
-  }
-  .Row1 {
-    float: left;
-    width: 49%;
-    margin: auto;
-  }
-  .project-row-desk {
-    font-weight: bold;
-    margin: auto;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 12px;
-    border: 1px solid rgb(148, 129, 129);
-    cursor: pointer;
-    margin-top: 4px;
-    margin-bottom: 0;
-    padding: 2px;
-    border-radius: 5px;
-    user-select: none;
-  }
-  .project-row-desk:hover {
-    background: rgba(116, 74, 196, 0.108);
-  }
-  .showDetails-desk {
-    display: flex;
-    font-weight: normal;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 9px;
-    margin-top: -9px;
-  }
-
-  .project-row-desk:hover {
-    background: rgba(92, 123, 165, 0.151);
-
-    box-shadow: 2px 2px 3px rgba(47, 30, 141, 0.404);
-  }
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: rgb(42, 87, 236);
 }
