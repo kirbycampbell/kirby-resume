@@ -176,10 +176,13 @@
     text-decoration: none;
     color: blue;
   }
+  .pdf-print-view {
+    display: none;
+  }
 }
 
 /* :::::::::::::::::::::: PHONE VIEW ::::::::::::::::::::::::::: */
-@media all and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   a {
     text-decoration: none;
     color: blue;
@@ -352,15 +355,12 @@
     text-decoration: none;
     color: blue;
   }
+  .pdf-print-view {
+    display: none;
+  }
 }
-
 @media print and (min-width: 200px) {
   .AppResume {
-    background: white;
-    width: 150%;
-    /* transform: translateY(-1020px) translateX(-270px) scale(0.7); */
-    margin: auto;
-    position: absolute;
-    z-index: 1500;
+    display: none;
   }
 }

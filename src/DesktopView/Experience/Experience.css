@@ -57,19 +57,19 @@
 
 @media print {
   .experience-outerD {
-    margin-bottom: 4px;
+    margin-bottom: 20px;
   }
 
   .outer-exp {
     margin: auto;
-    font-weight: normal;
+    font-weight: bold;
   }
 
   .inner-exp {
     display: flex;
     float: left;
     width: 28%;
-    height: 20%;
+    height: 50%;
     text-align: center;
     margin: auto;
     align-items: center;
@@ -86,7 +86,7 @@
     justify-content: center;
   }
   .smaller-text {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
   }
 
@@ -95,11 +95,12 @@
 
     border-radius: 8px;
     display: flex;
+
     margin: auto;
-    margin-bottom: 2px;
-    padding: 2px;
+    margin-bottom: 3px;
+    padding: 4px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .exp-item:hover {
