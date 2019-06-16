@@ -1,45 +1,44 @@
-@media (min-width: 900px) {
-  .App {
-    width: 100%;
+@media all and (min-width: 900px) {
+  .AppResume {
+    width: 90%;
     max-width: 1400px;
-    height: 1000px;
     margin: auto;
   }
 
-  body {
-    /* border: 2px solid rgba(46, 46, 46, 0.349); */
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    width: 99%;
-    border-radius: 10px;
-    height: 1000px;
+  a {
+    text-decoration: none;
+    color: blue;
   }
 
   .name-bnr {
     width: 100%;
     text-align: center;
     align-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 0.5%;
     font-family: "Lato", sans-serif;
     color: rgb(46, 46, 46);
     font-size: 26px;
-    height: 80px;
+  }
+
+  h1 {
+    margin: 10px 0px;
+  }
+
+  h2 {
+    margin: 10px 0px;
   }
 
   .job-bnr {
     font-family: "Lato", sans-serif;
     text-align: center;
-    display: flex;
     font-size: 20px;
     margin: auto;
     justify-content: center;
     align-items: center;
     border-radius: 2px;
     width: 100%;
-    height: 70px;
+    padding: 10px 0px;
     background-image: linear-gradient(
       to right,
       rgba(47, 101, 163, 0.38),
@@ -53,14 +52,18 @@
     border-radius: 100px;
   }
 
-  .main-container {
+  .main-containerResume {
     text-align: center;
     display: grid;
-    height: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
     grid-template-columns: 35% 65%;
   }
   .left-sidebar {
-    margin-left: 5%;
+    float: left;
+    left: 0;
+    height: 80%;
   }
   .contact {
     grid-template-columns: 20% 70%;
@@ -69,14 +72,6 @@
     height: 17.85%;
   }
 
-  i {
-    margin: auto;
-    font-size: 28px;
-  }
-
-  h4 {
-    margin: auto;
-  }
   .cont-item {
     display: flex;
     justify-content: center;
@@ -169,50 +164,61 @@
     width: 95%;
     margin-right: 12px;
   }
+  .pdf-btton {
+    display: flex;
+    width: 55%;
+    padding: 2%;
+    margin: auto;
+    background: rgba(86, 79, 180, 0.315);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: blue;
+  }
 }
 
-@media print {
-  .App {
-    width: 100%;
-    max-width: 900px;
-    height: 1000px;
-    margin: 0;
+/* :::::::::::::::::::::: PHONE VIEW ::::::::::::::::::::::::::: */
+@media all and (max-width: 900px) {
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  .AppResume {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
   }
 
-  body {
-    /* border: 2px solid rgba(46, 46, 46, 0.349); */
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    width: 99%;
-    border-radius: 10px;
-    height: 900px;
+  h1 {
+    margin: 30px 0px 20px 0px;
+  }
+
+  h2 {
+    margin: 10px 0px 10px 0px;
   }
 
   .name-bnr {
     width: 100%;
+    justify-content: center;
     text-align: center;
     align-content: center;
-    margin-top: 0px;
-    margin-left: 0.5%;
+    margin: 0px 0px;
     font-family: "Lato", sans-serif;
     color: rgb(46, 46, 46);
-    font-size: 18px;
-    height: 50px;
+    font-size: 26px;
   }
 
   .job-bnr {
     font-family: "Lato", sans-serif;
     text-align: center;
-    display: flex;
-    font-size: 16px;
+    font-size: 20px;
     margin: auto;
     justify-content: center;
     align-items: center;
     border-radius: 2px;
     width: 100%;
-    height: 40px;
     background-image: linear-gradient(
       to right,
       rgba(47, 101, 163, 0.38),
@@ -221,43 +227,35 @@
     );
   }
   .prof-pic {
-    margin-top: 2px;
-    height: 110px;
+    margin-bottom: 10px;
+    height: 146px;
     border-radius: 100px;
   }
 
-  .main-container {
+  .main-containerResume {
     text-align: center;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 90%;
-    grid-template-columns: 35% 65%;
   }
   .left-sidebar {
-    margin-left: 5%;
   }
   .contact {
-    grid-template-columns: 20% 70%;
+    grid-template-columns: 15% 70%;
     display: grid;
-    grid-gap: 2%;
-    height: 14.85%;
+    grid-gap: 1%;
+    height: 22%;
+    margin-bottom: 10px;
   }
 
-  i {
-    margin: auto;
-    font-size: 22px;
-  }
-
-  h4 {
-    margin: auto;
-  }
   .cont-item {
     display: flex;
     justify-content: center;
-    color: rgb(129, 85, 201);
+    color: rgb(132, 78, 219);
     background: rgba(233, 230, 230, 0.514);
     font-weight: bold;
     align-items: center;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     border: 1px solid rgba(44, 44, 44, 0.159);
     border-radius: 10px;
@@ -273,7 +271,7 @@
   }
 
   .spacer {
-    height: 4px;
+    height: 14px;
     width: 99%;
   }
   .spacer2 {
@@ -305,11 +303,11 @@
   .titles {
     text-align: center;
     display: flex;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
-    height: 30px;
+    height: 50px;
     width: 100%;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     align-items: center;
     justify-content: center;
     user-select: none;
@@ -332,14 +330,37 @@
   }
 
   .right-block {
-    float: right;
-    right: 0;
     height: 80%;
   }
 
   .right-grid {
     float: right;
-    width: 95%;
-    margin-right: 12px;
+    width: 100%;
+  }
+
+  .pdf-btton {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin: auto;
+    background: rgba(86, 79, 180, 0.315);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: blue;
+  }
+}
+
+@media print and (min-width: 200px) {
+  .AppResume {
+    background: white;
+    width: 150%;
+    /* transform: translateY(-1020px) translateX(-270px) scale(0.7); */
+    margin: auto;
+    position: absolute;
+    z-index: 1500;
   }
 }

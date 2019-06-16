@@ -49,6 +49,12 @@
   background: rgba(116, 74, 196, 0.108);
 }
 
+@media screen and (max-width: 900px) {
+  .exp-item {
+    font-size: 13px;
+  }
+}
+
 @media print {
   .experience-outerD {
     margin-bottom: 4px;

@@ -29,16 +29,23 @@
   border: 2px solid rgba(128, 128, 128, 0.342);
   border-radius: 10px;
   display: flex;
-  height: 60px;
+  min-height: 60px;
   margin: auto;
   margin-top: 5px;
   padding: 4px;
   font-weight: bold;
   font-size: 14px;
+  font-size: calc(13px + 3 * ((100% - 750px) / 1000));
 }
 
 .personality-item:hover {
   background: rgba(116, 74, 196, 0.108);
+}
+
+@media screen and (max-width: 900px) {
+  .personality-item {
+    font-size: 11px;
+  }
 }
 
 @media print {
