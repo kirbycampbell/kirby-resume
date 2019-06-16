@@ -8,6 +8,7 @@ import PersonalityD from "./Personality/PersonalityD";
 import ProgramsD from "./Programs/ProgramsD";
 //import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { unstable_useMediaQuery as useMediaQuery } from "@material-ui/core/useMediaQuery";
+import Footer from "./Footer/Footer";
 
 const DesktopView = () => {
   const phoneScreen = useMediaQuery("(max-width:900px)");
@@ -258,6 +259,7 @@ const DesktopView = () => {
             </div>
           </div>
         </div>
+        {/* <Footer /> */}
       </div>
     );
   } else {
