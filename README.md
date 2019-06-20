@@ -7,4 +7,6 @@ The main view for this app can be viewed at [DesktopView.js](https://github.com/
 Live Version of this app is viewable at: [Kirby Campbell's Resume](https://resume-app.jkirbycampbell.com/)
 
 Feel free to contact me at jkirbycampbell@gmail.com for job inqueries.
-View my [LinkedIn Profile](https://www.linkedin.com/in/jkirbycampbell/)
+View my [LinkedIn Profile](https://www.linkedin.com/in/jkirbycampbell/).
+
+Thanks
