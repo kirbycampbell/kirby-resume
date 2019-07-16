@@ -361,6 +361,6 @@
 }
 @media print and (min-width: 200px) {
   .AppResume {
-    display: none;
+    /* display: none; */
   }
 }

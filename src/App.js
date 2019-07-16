@@ -7,9 +7,9 @@ const App = () => {
     <div>
       <DesktopView />
       <Footer />
-      <div className="pdf-print-view">
+      {/* <div className="pdf-print-view">
         Print Resume PDF - by Clicking the Button at the Top Left. Thanks!
-      </div>
+      </div> */}
     </div>
   );
 };

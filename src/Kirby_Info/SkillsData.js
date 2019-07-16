@@ -4,18 +4,18 @@ export const codeSkills = [
   "Javascript",
   "GraphQL",
   "HTML/CSS",
-  "GitHub",
+  "MongoDb",
   "Redux",
   "Rails/Ruby",
-  "Vue",
+  "Vue.js",
   "SQL",
   "LINUX",
   "React Native",
-  "AWS Amplify",
-  "Heroku",
+  "AWS",
+  "Node.js",
   "C++",
   "jQuery",
-  "Typescript"
+  "Express.js"
 ];
 
 export const programs = [
@@ -89,11 +89,11 @@ export const projects = {
     hosted4: "AWS",
     website4: "https://journal-clone.jkirbycampbell.com/",
 
-    name5: "Meditation Timer",
-    framework5: "React Hooks",
-    backend5: "None yet",
-    hosted5: "Not yet",
-    website5: "https://meditation-app.jkirbycampbell.com/",
+    name5: "Status Share App",
+    framework5: "Vue.js",
+    backend5: "Express MongoDB",
+    hosted5: "AWS",
+    website5: "https://status-vue.jkirbycampbell.com",
 
     name6: "Store Front",
     framework6: "React Hooks",

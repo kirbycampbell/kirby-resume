@@ -27,7 +27,7 @@ const DesktopView = () => {
           {" "}
           <div className="left-sidebar">
             <a
-              href="https://homepagebucket.s3-us-west-2.amazonaws.com/New+Styled+Resume.pdf"
+              href="https://homepagebucket.s3-us-west-2.amazonaws.com/Kirby_Campbell_2019_Resume_wFooter.pdf"
               className="pdf-btton"
               target="_blank"
               data-rel="external"
@@ -155,7 +155,7 @@ const DesktopView = () => {
         <div className="main-containerResume">
           {" "}
           <a
-            href="https://homepagebucket.s3-us-west-2.amazonaws.com/New+Styled+Resume.pdf"
+            href="https://homepagebucket.s3-us-west-2.amazonaws.com/Kirby_Campbell_2019_Resume_wFooter.pdf"
             className="pdf-btton"
             target="_blank"
             data-rel="external"
