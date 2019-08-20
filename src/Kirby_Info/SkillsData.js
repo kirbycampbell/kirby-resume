@@ -130,17 +130,31 @@ export const experience = {
     desc: "Drove ~ 50 Hours/Week",
     work: "4.93 Rating with 1000+ rides"
   },
-  airbnbJob: {
-    name: "Managed 3 Short-Term Rentals",
-    years: "2015-2017",
-    desc: "Managed Booking & Upkeep",
-    work: "Concierge & Team Management"
+  // airbnbJob: {
+  //   name: "Managed 3 Short-Term Rentals",
+  //   years: "2015-2017",
+  //   desc: "Managed Booking & Upkeep",
+  //   work: "Concierge & Team Management"
+  // },
+  // stockJob: {
+  //   name: "Stock Trading",
+  //   years: "2017-Present",
+  //   desc: "Market & Fundamentals Awareness",
+  //   work: "Consistent 15% Gains each year"
+  // },
+  contractOne: {
+    name: "The Wally Shop (NY- Remote Contract)",
+    years: "2019-Present",
+    desc: "-Implemented Backend search API & UI Rendering",
+    work:
+      "-Provided Substitute items and added S3 upload functionality using MongoDB, ExpressJS, React, and Mongoose"
   },
-  stockJob: {
-    name: "Stock Trading",
-    years: "2017-Present",
-    desc: "Market & Fundamentals Awareness",
-    work: "Consistent 15% Gains each year"
+  contractTwo: {
+    name: "Word Web Development (Contract)",
+    years: "2019-Present",
+    desc: "-Built Fully Responsive React app for Environmental Law Company",
+    work:
+      "-Email forms, Event Registration, Scratch CSS, Custom Components, and Data Structures"
   },
   miningJob: {
     name: "Ethereum Crypto Mining",
