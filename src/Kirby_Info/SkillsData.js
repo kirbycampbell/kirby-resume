@@ -143,7 +143,7 @@ export const experience = {
   //   work: "Consistent 15% Gains each year"
   // },
   contractOne: {
-    name: "The Wally Shop (NY- Remote Contract)",
+    name: "The Wally Shop (NY Contract)",
     years: "2019-Present",
     desc: "-Implemented Backend search API & UI Rendering",
     work:
@@ -152,7 +152,7 @@ export const experience = {
   contractTwo: {
     name: "Word Web Development (Contract)",
     years: "2019-Present",
-    desc: "-Built Fully Responsive React app for Environmental Law Company",
+    desc: "-Built Responsive React app for Environmental Law Company",
     work:
       "-Email forms, Event Registration, Scratch CSS, Custom Components, and Data Structures"
   },

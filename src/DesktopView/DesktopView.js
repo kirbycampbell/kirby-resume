@@ -11,8 +11,8 @@ import { unstable_useMediaQuery as useMediaQuery } from "@material-ui/core/useMe
 
 const DesktopView = () => {
   const phoneScreen = useMediaQuery("(max-width:900px)");
-  const DesktopScreen = useMediaQuery("(min-width:900px)");
-
+  //const DesktopScreen = useMediaQuery("(min-width:900px)");
+  const DesktopScreen = true;
   if (DesktopScreen && !phoneScreen) {
     return (
       <div className="AppResume">
@@ -27,7 +27,7 @@ const DesktopView = () => {
           {" "}
           <div className="left-sidebar">
             <a
-              href="https://homepagebucket.s3-us-west-2.amazonaws.com/Kirby_Campbell_2019_Resume_wFooter.pdf"
+              href="https://homepagebucket.s3-us-west-2.amazonaws.com/Kirby+Campbell-Resume-Word-Aug2019.pdf"
               className="pdf-btton"
               target="_blank"
               data-rel="external"
@@ -38,7 +38,7 @@ const DesktopView = () => {
             <div className="left-brdr">
               <img
                 className="prof-pic"
-                src="https://pbs.twimg.com/profile_images/1106256070492614657/Qra_Davu_400x400.jpg"
+                src="https://i.imgur.com/bIBfBYY.jpg"
                 alt="prof-pic"
               />
             </div>
@@ -155,7 +155,7 @@ const DesktopView = () => {
         <div className="main-containerResume">
           {" "}
           <a
-            href="https://homepagebucket.s3-us-west-2.amazonaws.com/Kirby_Campbell_2019_Resume_wFooter.pdf"
+            href="https://homepagebucket.s3-us-west-2.amazonaws.com/Kirby+Campbell-Resume-Word-Aug2019.pdf"
             className="pdf-btton"
             target="_blank"
             data-rel="external"
@@ -167,7 +167,7 @@ const DesktopView = () => {
             <div className="left-brdr">
               <img
                 className="prof-pic"
-                src="https://pbs.twimg.com/profile_images/1106256070492614657/Qra_Davu_400x400.jpg"
+                src="https://i.imgur.com/bIBfBYY.jpg"
                 alt="prof-pic"
               />
             </div>
